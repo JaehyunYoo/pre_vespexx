@@ -7,6 +7,13 @@
   --foreground: #171717;
 }
 
+
+@layer components {
+  .container-xl {
+    @apply max-w-[1440px] mx-auto;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
