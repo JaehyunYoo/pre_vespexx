@@ -33,6 +33,7 @@ export const MainScrollCard = () => {
     scrollYProgress,
     [0, 0.25, 0.5, 0.75],
     [
+      // "linear-gradient(120deg, #FFF0DB 0%, #FBE7FF 100%)", // 원본 css
       "linear-gradient(to bottom right, #fff0da, #fae2ff)",
       "linear-gradient(to bottom right, #f4d4a4, #f3cafb",
       "linear-gradient(to bottom right, #f9dcb1, #f0bafb",
@@ -44,7 +45,7 @@ export const MainScrollCard = () => {
     <motion.section
       ref={containerRef}
       style={{ background: backgroundColor }}
-      className="w-full py-60 transition-colors duration-300 ease-in-out"
+      className="w-full py-[15rem] transition-colors duration-300 ease-in-out"
     >
       <div className="container-xl flex flex-col md:flex-row gap-x-12">
         {/* Sidebar */}
