@@ -12,8 +12,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        "gradient-start": "#ff7f63",
-        "gradient-end": "#ff512a",
+        "gradient-start": "#ff9328",
+        "gradient-end": "#feb061",
       },
     },
     fontFamily: {

@@ -24,12 +24,18 @@ export default function Home() {
       <Nav />
       <main>
         <section className="h-[100svh] relative flex flex-col justify-center items-center ">
-          <p className="text-6xl text-center font-bold mb-4 z-10 text-[#fbe4fe] leading-[81px]">
+          <p
+            className="text-6xl text-center font-bold mb-4 z-10 leading-[81px] inline-block text-transparent bg-clip-text"
+            style={{
+              backgroundImage:
+                "linear-gradient(275deg, #FBE4FE 25.48%, #FFE5C9 69.72%)",
+            }}
+          >
             Sound partnerships,
             <br />
             Sound individuals
           </p>
-          <p className="text-white text-2xl font-normal z-10">
+          <p className="text-[#E9E9E9] text-2xl font-normal z-10">
             Empowering the Most Intimate Relationship to Be Healthier
           </p>
           <div className="z-10 h-[4.5rem] mt-[2.5rem] px-7 py-5 bg-gradient-to-r from-gradient-start to-gradient-end rounded-[80px] justify-center items-center gap-2.5 inline-flex">
