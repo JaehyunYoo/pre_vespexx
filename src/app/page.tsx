@@ -4,7 +4,7 @@ import Lenis from "@studio-freight/lenis";
 import Image from "next/image";
 /*components*/
 import { Nav } from "@/components/Nav";
-import { MainScrollCard } from "@/components/MainScrollCardSection";
+import { MainScrollCard } from "@/components/home/MainScrollCardSection";
 import { GoArrowRight } from "react-icons/go";
 
 export default function Home() {

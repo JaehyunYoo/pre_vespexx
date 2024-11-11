@@ -92,6 +92,7 @@ export const MainScrollCard = () => {
                 range={[index * 0.25, 1]}
                 targetScale={targetScale}
                 i={index}
+                dataLength={data.length}
               />
             );
           })}

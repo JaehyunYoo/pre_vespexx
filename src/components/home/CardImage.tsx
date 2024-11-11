@@ -4,6 +4,7 @@ import React from "react";
 import { motion, useTransform } from "framer-motion";
 import Image from "next/image";
 import { MainScrollCardProps } from "./MainScrollCardSection";
+import { s } from "framer-motion/client";
 
 const CardImage = ({
   src,
@@ -11,14 +12,15 @@ const CardImage = ({
   range,
   targetScale,
   i,
-}: MainScrollCardProps) => {
+  dataLength,
+}: MainScrollCardProps & { dataLength: number }) => {
   /** 그라디언트 opacity 애니메이션 */
   const gradientOpacity = useTransform(
     progress,
     [i * 0.35, (i + 0.5) * 0.35],
     [0, 1]
   );
-
+  /** 그라디언트 색상 */
   const gradiendCardTop = [
     "from-[#f5f4f2]",
     "from-[#f5f4f3]",
@@ -32,8 +34,8 @@ const CardImage = ({
       <motion.div
         className="relative w-full h-full rounded-[25px]  origin-top "
         style={{
-          scale,
-          top: `calc(1.5svh + ${i * 25}px)`,
+          scale: dataLength - 1 === i ? 1 : scale,
+          top: dataLength - 1 === i ? "0" : `calc(1.5svh + ${i * 25}px)`,
         }}
       >
         {i <= 2 && (
