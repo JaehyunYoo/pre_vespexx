@@ -31,7 +31,7 @@ const CardImage = ({
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <article className="w-full h-[80vh] sticky top-20 ">
+    <article className="w-full sticky top-20 ">
       <motion.div
         className="w-full h-full origin-top bg-white rounded-[25px] relative overflow-hidden shadow-inner"
         style={{
