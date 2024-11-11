@@ -6,6 +6,8 @@ import Image from "next/image";
 import { Nav } from "@/components/Nav";
 import { MainScrollCard } from "@/components/home/MainScrollCardSection";
 import { GoArrowRight } from "react-icons/go";
+import CardUi from "@/components/CardUi";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   useEffect(() => {
@@ -65,64 +67,37 @@ export default function Home() {
             with intelligent tools, expert contents, and personalized therapy
             for enduring relationships
           </div>
-          <h4 className="text-center text-[#ff7f63] text-4xl font-semibold mb-[12.5rem]">
+          <h4 className="text-center text-[#ff7f63] text-4xl font-semibold mb-10">
             Bring us closer together
           </h4>
           <div className="w-full container-xl flex gap-10">
-            <div className="h-[386px] px-7 py-16 bg-white rounded-3xl shadow flex-col justify-start items-center gap-[30px] inline-flex">
-              <div className="w-[100px] h-[100px] relative">
-                <div className="w-[100px] h-[100px] left-0 top-0 absolute bg-[#fffbf6] rounded-[80px]"></div>
-                <div className="w-12 h-12 p-1.5 left-[26.33px] top-[26px] absolute justify-center items-center inline-flex">
-                  <div className="w-9 h-9 relative flex-col justify-start items-start flex"></div>
-                </div>
-              </div>
-              <div className="self-stretch h-32 flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch text-center text-black text-2xl font-semibold font-['Pretendard JP'] leading-loose">
-                  Calendar Theme <br />
-                  Customization
-                </div>
-                <div className="self-stretch text-center text-[#777777] text-[17px] font-medium font-['Pretendard']">
-                  Manage your schedules according to your preferences
-                </div>
-              </div>
-            </div>
-            <div className="h-[386px] px-7 py-16 bg-white rounded-3xl shadow flex-col justify-start items-center gap-[30px] inline-flex">
-              <div className="w-[100px] h-[100px] relative">
-                <div className="w-[100px] h-[100px] left-0 top-0 absolute bg-[#fffbf6] rounded-[80px]"></div>
-                <div className="w-12 h-12 p-1.5 left-[26.33px] top-[26px] absolute justify-center items-center inline-flex">
-                  <div className="w-9 h-9 relative flex-col justify-start items-start flex"></div>
-                </div>
-              </div>
-              <div className="self-stretch h-32 flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch text-center text-black text-2xl font-semibold font-['Pretendard JP'] leading-loose">
-                  Calendar Theme <br />
-                  Customization
-                </div>
-                <div className="self-stretch text-center text-[#777777] text-[17px] font-medium font-['Pretendard']">
-                  Manage your schedules according to your preferences
-                </div>
-              </div>
-            </div>
-            <div className="h-[386px] px-7 py-16 bg-white rounded-3xl shadow flex-col justify-start items-center gap-[30px] inline-flex">
-              <div className="w-[100px] h-[100px] relative">
-                <div className="w-[100px] h-[100px] left-0 top-0 absolute bg-[#fffbf6] rounded-[80px]"></div>
-                <div className="w-12 h-12 p-1.5 left-[26.33px] top-[26px] absolute justify-center items-center inline-flex">
-                  <div className="w-9 h-9 relative flex-col justify-start items-start flex"></div>
-                </div>
-              </div>
-              <div className="self-stretch h-32 flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch text-center text-black text-2xl font-semibold font-['Pretendard JP'] leading-loose">
-                  Calendar Theme <br />
-                  Customization
-                </div>
-                <div className="self-stretch text-center text-[#777777] text-[17px] font-medium font-['Pretendard']">
-                  Manage your schedules according to your preferences
-                </div>
-              </div>
-            </div>
+            <CardUi />
+            <CardUi />
+            <CardUi />
+          </div>
+        </section>
+        <section className=" w-full flex flex-col justify-center items-center py-[15rem]">
+          <div className="w-32 h-32 relative rounded-3xl shadow mb-10">
+            <Image src="/images/whiteLogo.svg" alt="image" fill />
+          </div>
+          <h4 className="text-center text-[#1e1e1e] text-5xl font-semibold mb-8">
+            Revolutionizing couple dynamics
+          </h4>
+          <div className="text-center text-[#777777] text-xl font-medium leading-7 mb-[12.5rem]">
+            with intelligent tools, expert contents, and personalized therapy
+            for enduring relationships
+          </div>
+          <h4 className="text-center text-[#ff7f63] text-4xl font-semibold mb-10">
+            Bring us closer together
+          </h4>
+          <div className="w-full container-xl flex gap-10">
+            <CardUi />
+            <CardUi />
+            <CardUi />
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }

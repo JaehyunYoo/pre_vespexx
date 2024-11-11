@@ -5,9 +5,10 @@ import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { GoArrowRight } from "react-icons/go";
 import CardImage from "./CardImage";
+import MaxContainer from "../MaxContainer";
+import { CardData, data } from "@/data/data";
 
 export type MainScrollCardProps = {
-  src: string;
   progress: MotionValue<number>;
   range: number[];
   targetScale: number;
@@ -16,14 +17,7 @@ export type MainScrollCardProps = {
 
 export const MainScrollCard = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  // 이미지 배열
-  const data = [
-    "/images/test1.svg",
-    "/images/test2.svg",
-    "/images/test3.svg",
-    "/images/test4.svg",
-  ];
-  //
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
@@ -47,7 +41,7 @@ export const MainScrollCard = () => {
       style={{ background: backgroundColor }}
       className="w-full py-[15rem] transition-colors duration-300 ease-in-out"
     >
-      <div className="container-xl flex flex-col md:flex-row gap-x-12">
+      <MaxContainer className="flex flex-col md:flex-row gap-x-12">
         {/* Sidebar */}
         <div className="w-full md:h-fit md:sticky top-20 pt-8">
           <div className="flex justify-between">
@@ -81,13 +75,13 @@ export const MainScrollCard = () => {
           <div className="pt-40" />
         </div>
         {/* Services Stack */}
-        <div className="w-full relative">
+        <div className="w-full">
           {data.map((item, index) => {
             const targetScale = 1 - (data.length - index) * 0.05;
             return (
               <CardImage
                 key={index * 2}
-                src={item}
+                data={item}
                 progress={scrollYProgress}
                 range={[index * 0.25, 1]}
                 targetScale={targetScale}
@@ -97,7 +91,7 @@ export const MainScrollCard = () => {
             );
           })}
         </div>
-      </div>
+      </MaxContainer>
     </motion.section>
   );
 };
