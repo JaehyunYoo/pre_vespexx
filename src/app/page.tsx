@@ -1,13 +1,13 @@
 "use client";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
-import Image from "next/image";
 import { GoArrowRight } from "react-icons/go";
 /*components*/
-import { MainScrollCard } from "@/components/home/MainScrollCardSection";
-import CardUi from "@/components/CardUi";
 import Footer from "@/components/Footer";
 import { Nav } from "@/components/Nav";
+import MainScrollCardSection from "@/components/home/MainScrollCardSection";
+import CoupleDynamicsSection from "@/components/home/CoupleDynamicsSection";
+import ReviewSection from "@/components/home/ReviewSection";
 
 export default function Home() {
   useEffect(() => {
@@ -55,14 +55,16 @@ export default function Home() {
             className="w-full absolute top-0 left-0 h-full object-cover overscroll-none"
           />
         </section>
-        <MainScrollCard />
-        <section className=" w-full flex flex-col justify-center items-center py-[15rem]">
+        <MainScrollCardSection />
+        <CoupleDynamicsSection />
+        <ReviewSection />
+        {/* <section className=" w-full flex flex-col justify-center items-center py-[15rem]">
           <div className="w-32 h-32 relative rounded-3xl shadow mb-10">
             <Image src="/images/whiteLogo.svg" alt="image" fill />
           </div>
           <h4 className="text-center text-[#1e1e1e] text-5xl font-semibold mb-8">
             Revolutionizing couple dynamics
-          </h4>
+          </h4> 
           <div className="text-center text-[#777777] text-xl font-medium leading-7 mb-[12.5rem]">
             with intelligent tools, expert contents, and personalized therapy
             for enduring relationships
@@ -95,7 +97,7 @@ export default function Home() {
             <CardUi />
             <CardUi />
           </div>
-        </section>
+        </section> */}
       </main>
       <Footer />
     </>

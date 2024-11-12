@@ -15,7 +15,7 @@ export type MainScrollCardProps = {
   i: number;
 };
 
-export const MainScrollCard = () => {
+const MainScrollCardSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -95,3 +95,5 @@ export const MainScrollCard = () => {
     </motion.section>
   );
 };
+
+export default MainScrollCardSection;

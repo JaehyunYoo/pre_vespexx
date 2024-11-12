@@ -1,8 +1,17 @@
+/** Low Data Type */
 export type CardData = {
   title: string;
   description: string;
   image: string;
 };
+
+export type CoupleDynamicsDataProps = {
+  icon: string;
+  title: string;
+  description: string;
+};
+
+/** Low Data */
 
 export const data: CardData[] = [
   {
@@ -42,3 +51,50 @@ export const cardUiRelationShipData = [
     description: "Connected Calendar as a Platform",
   },
 ];
+
+export const coupleDynamicsDataFirst = {
+  title: "Bring us closer together",
+  data: [
+    {
+      icon: "/images/calendar.svg",
+      title: "Calendar Theme\nCustomization",
+      description: "Manage your schedules according to your preferences",
+    },
+    {
+      icon: "/images/todo.svg",
+      title: "To-do list synced\nwith calendar",
+      description:
+        "Manage your housechore, tasks, habits, and bucket lists together according to the schedules",
+    },
+    {
+      icon: "/images/todo.svg",
+      title: "Simple and Intuitive Design\nfor Maximized Productivity",
+      description:
+        "with intelligent tools, expert content,and premium lifestyle offerings",
+    },
+  ],
+};
+
+export const coupleDynamicsDataSecond = {
+  title: "For a Better and Lasting Relationship",
+  data: [
+    {
+      icon: "/images/coupleContents.svg",
+      title: "High-Quality Expert Contents\nfor Couples",
+      description:
+        "Contents to help you better understand your partner and maintain a healthy relationship",
+    },
+    {
+      icon: "/images/relationship.svg",
+      title: "Professional Consulting\nfor Relationship Care",
+      description:
+        "with intelligent tools, expert content, and premium lifestyle offerings",
+    },
+    {
+      icon: "/images/sharedGoals.svg",
+      title: "Financial Management\nfor Shared Goals",
+      description:
+        "with intelligent tools, expert content, and premium lifestyle offerings",
+    },
+  ],
+};

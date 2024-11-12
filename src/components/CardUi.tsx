@@ -1,22 +1,22 @@
 import React from "react";
 import Image from "next/image";
+import { CoupleDynamicsDataProps } from "@/data/data";
 
-const CardUi = () => {
+const CardUi = ({ data }: { data: CoupleDynamicsDataProps }) => {
   return (
-    <div className="flex-1 flex flex-col justify-center items-center px-7 py-16 rounded-3xl shadow">
+    <div className="flex-1 flex flex-col justify-center items-center px-7 py-16 rounded-3xl bg-white">
       <Image
-        src="/images/calendar.svg"
+        src={data.icon}
         alt="image"
         width={100}
         height={100}
         className="mb-7"
       />
       <h5 className="text-2xl font-semibold text-black text-center mb-6">
-        Calendar Theme <br />
-        Customization
+        {data.title}
       </h5>
       <p className="text-center text-[#777777] text-[17px] font-medium">
-        Manage your schedules according to your preferences
+        {data.description}
       </p>
     </div>
   );
