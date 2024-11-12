@@ -8,6 +8,7 @@ import { Nav } from "@/components/Nav";
 import MainScrollCardSection from "@/components/home/MainScrollCardSection";
 import CoupleDynamicsSection from "@/components/home/CoupleDynamicsSection";
 import ReviewSection from "@/components/home/ReviewSection";
+import CoupleLifeStyleSection from "@/components/home/CoupleLifeStyleSection";
 
 export default function Home() {
   useEffect(() => {
@@ -58,6 +59,7 @@ export default function Home() {
         <MainScrollCardSection />
         <CoupleDynamicsSection />
         <ReviewSection />
+        <CoupleLifeStyleSection/>
         {/* <section className=" w-full flex flex-col justify-center items-center py-[15rem]">
           <div className="w-32 h-32 relative rounded-3xl shadow mb-10">
             <Image src="/images/whiteLogo.svg" alt="image" fill />

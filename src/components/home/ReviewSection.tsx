@@ -8,7 +8,7 @@ const ReviewSection = () => {
     <section className="container-xl py-[15rem]">
       <div className="w-full flex gap-10">
         {/* Left Sticky */}
-        <div className="w-[44%] h-full sticky top-20">
+        <div className="w-[42%] h-full sticky top-20">
           <Image
             src="/images/left_section.svg"
             alt="image"
@@ -22,7 +22,7 @@ const ReviewSection = () => {
           <GetStartedButton />
         </div>
         {/* Right Content flex 2 */}
-        <div className="w-[56%] flex gap-10">
+        <div className="w-[58%] flex gap-10">
           {/* Left Review*/}
           <div className="flex w-full">
             {/* Review Card */}
@@ -92,11 +92,13 @@ const ReviewCard = ({
   title,
   description,
   aspect,
+  alt,
 }: {
   image: string;
   title: string;
   description: string;
   aspect?: string;
+  alt?: string;
 }) => {
   return (
     <div className="rounded-[24px]">
@@ -115,7 +117,7 @@ const ReviewCard = ({
       <div className="p-6 bg-white border-b border-l border-r border-[#E9EBF1] rounded-b-[24px]">
         <Image
           src="/images/couple_review_photo01.svg"
-          alt="image"
+          alt={`${alt ?? "image"}`}
           width={72}
           height={40}
           className="mb-6"
