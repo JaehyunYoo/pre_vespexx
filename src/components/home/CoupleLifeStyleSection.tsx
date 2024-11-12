@@ -6,12 +6,12 @@ const CoupleLifeStyleSection = () => {
   return (
     <section className="bg-[#F3F6FB] py-[15rem]">
       <div className="container-xl">
-        <h5 className="text-center text-[#ff7e62] text-2xl font-semibold mb-8">
+        <span className="text-center text-[#ff7e62] text-2xl font-semibold mb-8 block">
           Only in 7 months
-        </h5>
-        <p className="text-center text-[#1e1e1e] text-5xl font-semibold">
+        </span>
+        <h5 className="text-center text-[#1e1e1e] text-5xl font-semibold">
           Changing couple's lifestyle rapidly
-        </p>
+        </h5>
 
         <div className="flex gap-10 mt-[7.5rem]">
           <CoupleLifeStyleCard
