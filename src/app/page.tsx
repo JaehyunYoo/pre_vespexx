@@ -2,12 +2,12 @@
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 import Image from "next/image";
-/*components*/
-import { Nav } from "@/components/Nav";
-import { MainScrollCard } from "@/components/home/MainScrollCardSection";
 import { GoArrowRight } from "react-icons/go";
+/*components*/
+import { MainScrollCard } from "@/components/home/MainScrollCardSection";
 import CardUi from "@/components/CardUi";
 import Footer from "@/components/Footer";
+import { Nav } from "@/components/Nav";
 
 export default function Home() {
   useEffect(() => {
@@ -47,11 +47,11 @@ export default function Home() {
             <GoArrowRight color="white" size={24} />
           </div>
           <video
-            src="https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/video%2F980016f30ddfab24c29dc34429a1d651adaf25a5.mp4?alt=media&token=31895565-a597-4616-aedd-6e9540cdc66a"
+            src="https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/video%2Fmain.mp4?alt=media&token=d46ff5ba-ecc0-4811-9db9-2a27086f7424"
             autoPlay
             muted
             loop
-            preload="auto"
+            playsInline
             className="w-full absolute top-0 left-0 h-full object-cover overscroll-none"
           />
         </section>

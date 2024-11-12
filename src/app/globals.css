@@ -7,10 +7,9 @@
   --foreground: #171717;
 }
 
-
 @layer components {
   .container-xl {
-    @apply max-w-[1440px] mx-auto;
+    @apply max-w-[1440px] mx-auto px-10;
   }
 }
 
