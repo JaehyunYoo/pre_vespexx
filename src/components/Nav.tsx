@@ -25,7 +25,7 @@ export const Nav = () => {
           <div className="hidden lg:flex  w-full justify-between items-center">
             <div className="flex gap-4 items-center h-full">
               <Link
-                href="/"
+                href="/team"
                 className="flex items-center h-full px-6 text-center text-white text-base font-semibold hover:text-[#ff9328] transition-colors duration-200"
               >
                 Team

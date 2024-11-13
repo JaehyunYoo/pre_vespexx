@@ -25,7 +25,7 @@ const CoupleDynamicsSection = () => {
           </p>
           {/* Content 01 */}
           <div className="pt-[12.5rem]">
-            <h4 className="text-center text-[#ff7f63] text-4xl font-semibold mb-12">
+            <h4 className="text-center text-[#ff7f63] text-4xl font-semibold mb-12 ">
               {coupleDynamicsDataFirst.title}
             </h4>
             <div className="w-full flex gap-10">

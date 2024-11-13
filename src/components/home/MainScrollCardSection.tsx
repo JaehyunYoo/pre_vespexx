@@ -6,7 +6,7 @@ import Image from "next/image";
 import { GoArrowRight } from "react-icons/go";
 import CardImage from "./CardImage";
 import MaxContainer from "../MaxContainer";
-import { CardData, data } from "@/data/data";
+import { CardData, homeCardScrollScaleData } from "@/data/data";
 
 export type MainScrollCardProps = {
   progress: MotionValue<number>;
@@ -76,8 +76,9 @@ const MainScrollCardSection = () => {
         </div>
         {/* Services Stack */}
         <div className="w-full">
-          {data.map((item, index) => {
-            const targetScale = 1 - (data.length - index) * 0.05;
+          {homeCardScrollScaleData.map((item, index) => {
+            const targetScale =
+              1 - (homeCardScrollScaleData.length - index) * 0.05;
             return (
               <CardImage
                 key={index * 2}
@@ -86,7 +87,7 @@ const MainScrollCardSection = () => {
                 range={[index * 0.25, 1]}
                 targetScale={targetScale}
                 i={index}
-                dataLength={data.length}
+                dataLength={homeCardScrollScaleData.length}
               />
             );
           })}

@@ -1,10 +1,28 @@
 import React from "react";
 import { GoArrowRight } from "react-icons/go";
 
-const GetStartedButton = () => {
+interface GetStartedButtonProps {
+  title: string;
+  link?: string;
+  padding?: string;
+  textSize?: string;
+}
+
+const GetStartedButton = ({
+  title,
+  link,
+  padding,
+  textSize,
+}: GetStartedButtonProps) => {
   return (
-    <div className="mt-10 inline-flex items-center justify-center px-7 py-5 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end">
-      <p className="text-white text-[21px] font-bold">Get Started</p>
+    <div
+      className={`${
+        padding ?? "px-6 py-4"
+      } bg-gradient-to-r from-[#ff9328] to-[#feb061] rounded-[100px] flex items-center justify-center`}
+    >
+      <p className={`text-white ${textSize ?? "text-base"} font-bold`}>
+        {title}
+      </p>
       <GoArrowRight color="white" size={24} className="ml-2" />
     </div>
   );

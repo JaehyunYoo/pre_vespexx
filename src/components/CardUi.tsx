@@ -13,7 +13,15 @@ const CardUi = ({ data }: { data: CoupleDynamicsDataProps }) => {
         className="mb-7"
       />
       <h5 className="text-2xl font-semibold text-black text-center mb-6">
-        {data.title}
+        {data.title.includes("\n") ? (
+          <>
+            {data.title.split("\n")[0]}
+            <br />
+            {data.title.split("\n")[1]}
+          </>
+        ) : (
+          data.title
+        )}
       </h5>
       <p className="text-center text-[#777777] text-[17px] font-medium">
         {data.description}

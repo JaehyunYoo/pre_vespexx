@@ -11,28 +11,42 @@ export type CoupleDynamicsDataProps = {
   description: string;
 };
 
+export type NewsAndMediaDataProps = {
+  image: string;
+  title: string;
+  link: string;
+  alt?: string;
+};
+
+export type TeamCardDataProps = {
+  image: string;
+  name: string;
+  position: string;
+  alt: string;
+};
+
 /** Low Data */
 
-export const data: CardData[] = [
+export const homeCardScrollScaleData: CardData[] = [
+  {
+    title: "Connected Calendar",
+    description: "Sync with daily life",
+    image: "/images/home/card_calendar.png",
+  },
   {
     title: "Sync the Schedule",
     description: "Connected Calendar as a Platform",
-    image: "/images/content1.svg",
-  },
-  {
-    title: "Sync with daily life",
-    description: "Connected Calendar as a Platform",
-    image: "/images/content2.svg",
+    image: "/images/home/card_schedule.png",
   },
   {
     title: "Manage health together",
     description: "Health Record, Menstrual Cycle, Mental Care",
-    image: "/images/content3.svg",
+    image: "/images/home/card_health.png",
   },
   {
     title: "Messenger & Status Mode",
     description: "Care better with quick status updates",
-    image: "/images/content4.svg",
+    image: "/images/home/card_couple_status.png",
   },
 ];
 
@@ -56,8 +70,8 @@ export const coupleDynamicsDataFirst = {
   title: "Bring us closer together",
   data: [
     {
-      icon: "/images/calendar.svg",
-      title: "Calendar Theme\nCustomization",
+      icon: "/images/icons/calendar.png",
+      title: `Calendar Theme\nCustomization`,
       description: "Manage your schedules according to your preferences",
     },
     {
@@ -98,3 +112,132 @@ export const coupleDynamicsDataSecond = {
     },
   ],
 };
+
+export const newsAndMediaData: NewsAndMediaDataProps[] = [
+  {
+    image: "/images/news/news_01.svg",
+    title:
+      "Vespexx's Couple Wellness App 'Signaling' Expands Monetization and Global Reach",
+    link: "/",
+    alt: "news_01",
+  },
+  {
+    image: "/images/news/news_02.svg",
+    title:
+      "'Signaling' Surpasses 200,000 Users, Targets Global Market with Premium Features",
+    link: "/",
+    alt: "news_02",
+  },
+  {
+    image: "/images/news/news_03.svg",
+    title: "Vespexx Launches 'Signaling' in U.S. and Japan",
+    link: "/",
+    alt: "news_03",
+  },
+  {
+    image: "/images/news/news_04.svg",
+    title: "'Signaling' Reaches 200,000 Downloads as Couple Communication Tool",
+    link: "/",
+    alt: "news_04",
+  },
+  {
+    image: "/images/news/news_05.svg",
+    title:
+      "'Signaling' Sees Explosive 110% Monthly Growth as a Couple Calendar SaaS",
+    link: "/",
+    alt: "news_05",
+  },
+  {
+    image: "/images/news/news_06.svg",
+    title:
+      "Couple Calendar SaaS 'Signaling' Hits 200,000 Downloads in 7 Months",
+    link: "/",
+    alt: "news_06",
+  },
+];
+
+/** C-Level Team Data */
+export const cLevelTeamData: TeamCardDataProps[] = [
+  {
+    image: "/images/team/ceo.png",
+    name: "M.J. Sohn",
+    position: "CEO, Ph.D.",
+    alt: "CEO, Ph.D. M.J. Sohn",
+  },
+  {
+    image: "/images/team/coo.png",
+    name: "J.W. Jung",
+    position: "COO",
+    alt: "COO J.W. Jung",
+  },
+];
+
+/** Platform Team Data*/
+export const platformTeamData: TeamCardDataProps[] = [
+  {
+    image: "/images/team/p_cjl.png",
+    name: "C.J. Lee",
+    position: "Product Manager",
+    alt: "Product Manager C.J. Lee",
+  },
+  {
+    image: "/images/team/p_hsj.png",
+    name: "H.S. Jang",
+    position: "Growth Manager",
+    alt: "Growth Manager H.S. Jang",
+  },
+  {
+    image: "/images/team/p_shp.png",
+    name: "S.H. Park",
+    position: "Senior Engineer",
+    alt: "Senior Engineer S.H. Park",
+  },
+  {
+    image: "/images/team/p_jgk.png",
+    name: "J.G. Kang",
+    position: "Developer",
+    alt: "Developer J.G. Kang",
+  },
+  {
+    image: "/images/team/p_jhy.png",
+    name: "J.H. Yoo",
+    position: "Developer",
+    alt: "Developer J.H. Yoo",
+  },
+  {
+    image: "/images/team/p_yjs.png",
+    name: "Y.J. Shin",
+    position: "Product Designer",
+    alt: "Product Designer Y.J. Shin",
+  },
+];
+/** Healthcare Team Data */
+export const healthcareTeamData: TeamCardDataProps[] = [
+  {
+    image: "/images/team/h_she.png",
+    name: "S.H. Eom",
+    position: "Lead",
+    alt: "Lead S.H. Eom",
+  },
+  {
+    image: "/images/team/h_yjp.png",
+    name: "Y.J. Park",
+    position: "Developer",
+    alt: "Developer Y.J. Park",
+  },
+  {
+    image: "/images/team/h_jkk.png",
+    name: "J.K. Kang",
+    position: "Product Designer",
+    alt: "Product Designer J.K. Kang",
+  },
+];
+/** Finance Team Data */
+export const financeTeamData: TeamCardDataProps[] = [
+  {
+    image: "/images/team/f_hik.png",
+    name: "H.I. Kim",
+    position: "Lead",
+    alt: "Lead H.I. Kim",
+  },
+];

@@ -4,8 +4,6 @@ import Lenis from "@studio-freight/lenis";
 import { GoArrowRight } from "react-icons/go";
 import Image from "next/image";
 /*components*/
-import Footer from "@/components/Footer";
-import { Nav } from "@/components/Nav";
 import MainScrollCardSection from "@/components/home/MainScrollCardSection";
 import CoupleDynamicsSection from "@/components/home/CoupleDynamicsSection";
 import ReviewSection from "@/components/home/ReviewSection";
@@ -22,7 +20,11 @@ export default function Home() {
       requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf);
+    let rafId = requestAnimationFrame(raf);
+    return () => {
+      cancelAnimationFrame(rafId);
+      lenis.destroy();
+    };
   }, []);
 
   return (
@@ -54,6 +56,7 @@ export default function Home() {
           muted
           loop
           playsInline
+          preload="auto"
           className="w-full absolute top-0 left-0 h-full object-cover overscroll-none"
         />
       </section>
@@ -62,7 +65,6 @@ export default function Home() {
       <ReviewSection />
       <CoupleLifeStyleSection />
       <GlobalIntroSection />
-      <Image src="/mock.svg" alt="news-media-bg" width={1920} height={960} />
       <NewsAndMediaSection />
     </main>
   );

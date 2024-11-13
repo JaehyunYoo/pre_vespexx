@@ -19,7 +19,13 @@ const ReviewSection = () => {
             The ultimate couple's super app: syncing
             <br /> schedules, nurturing relationships, and enhancing lifestyles
           </h5>
-          <GetStartedButton />
+          <div className="max-w-[200px]">
+            <GetStartedButton
+              title="Get Started"
+              textSize="text-xl"
+              padding="px-7 py-5"
+            />
+          </div>
         </div>
         {/* Right Content flex 2 */}
         <div className="w-[58%] flex gap-10">
