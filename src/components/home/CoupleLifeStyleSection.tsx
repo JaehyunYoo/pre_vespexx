@@ -5,7 +5,7 @@ import React from "react";
 const CoupleLifeStyleSection = () => {
   return (
     <section className="bg-[#F3F6FB] py-[15rem]">
-      <div className="container-xl">
+      <div className="container-xl px-20">
         <span className="text-center text-[#ff7e62] text-2xl font-semibold mb-8 block">
           Only in 7 months
         </span>

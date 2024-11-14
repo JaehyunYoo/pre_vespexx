@@ -17,13 +17,12 @@ const NewsAndMediaSection = () => {
             <GoArrowRight color="white" size={24} className="ml-2" />
           </div>
         </div>
-        <div className="flex px-20 justify-center gap-8">
+        <div className="grid grid-cols-3 gap-8 px-20">
           {newsAndMediaData.slice(0, 3).map((item, index) => (
             <NewsMediaCard key={index} data={item} />
           ))}
         </div>
       </MaxContainer>
-     
     </section>
   );
 };

@@ -9,13 +9,26 @@ const ReviewSection = () => {
       <div className="w-full flex gap-10">
         {/* Left Sticky */}
         <div className="w-[42%] h-full sticky top-20">
-          <Image
-            src="/images/home/together.png"
-            alt="image"
-            width={560}
-            height={420}
-            priority
-          />
+          <div className="w-[560px] h-[420px] relative rounded-[24px] overflow-hidden">
+            <div className="w-full h-full bg-black/50 z-10 flex flex-col items-center justify-center">
+              <h4 className="text-white text-4xl font-bold mb-5">
+                Better Together
+              </h4>
+              <p className="text-white text-[16px] font-medium">
+                No matter what you do or where you are
+              </p>
+            </div>
+            <video
+              src="https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/video%2Fmain.mp4?alt=media&token=d46ff5ba-ecc0-4811-9db9-2a27086f7424"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              className="w-full absolute top-0 left-0 h-full object-cover overscroll-none z-[-1]"
+            />
+          </div>
+
           <h5 className="text-left text-2xl font-medium py-10">
             The ultimate couple's super app: syncing
             <br /> schedules, nurturing relationships, and enhancing lifestyles
