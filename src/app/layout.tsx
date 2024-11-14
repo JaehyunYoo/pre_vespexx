@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
 import Footer from "@/components/Footer";
+import LenisProvider from "@/components/LenisProvider";
 
 const pretendard = localFont({
   src: [
@@ -49,9 +50,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={pretendard.className}>
-        <Nav />
-        {children}
-        <Footer />
+        <LenisProvider>
+          <Nav />
+          {children}
+          <Footer />
+        </LenisProvider>
       </body>
     </html>
   );

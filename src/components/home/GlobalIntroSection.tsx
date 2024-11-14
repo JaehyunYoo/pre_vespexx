@@ -12,10 +12,10 @@ const GlobalIntroSection = () => {
           Wide-spreading to reach the world
         </h5>
         <Image
-          src="/images/global_intro.svg"
+          src="/images/home/global_section.png"
           alt="global-intro"
           width={1360}
-          height={718}
+          height={955}
         />
       </div>
     </section>

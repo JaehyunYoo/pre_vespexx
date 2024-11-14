@@ -11,6 +11,7 @@ const CardUi = ({ data }: { data: CoupleDynamicsDataProps }) => {
         width={100}
         height={100}
         className="mb-7"
+        priority
       />
       <h5 className="text-2xl font-semibold text-black text-center mb-6">
         {data.title.includes("\n") ? (

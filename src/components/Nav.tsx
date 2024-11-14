@@ -3,10 +3,16 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
+  const sitePath = {
+    team: "/team",
+    blog: "/blog",
+    contactUs: "/contactUs",
+  };
+  const pathname = usePathname();
   return (
     <header className="fixed top-0 left-0 w-full z-50">
       <nav className="container-xl max-h-13 py-4 px-10">
@@ -14,7 +20,7 @@ export const Nav = () => {
           {/** Logo */}
           <Link href="/">
             <Image
-              src="/images/logo.svg"
+              src="/images/logo.png"
               alt="Vespexx Logo"
               width={253}
               height={52}
@@ -25,22 +31,28 @@ export const Nav = () => {
           <div className="hidden lg:flex  w-full justify-between items-center">
             <div className="flex gap-4 items-center h-full">
               <Link
-                href="/team"
-                className="flex items-center h-full px-6 text-center text-white text-base font-semibold hover:text-[#ff9328] transition-colors duration-200"
+                href={sitePath.team}
+                className={`flex items-center h-full px-6 text-center ${
+                  pathname !== "/" ? "text-[#29292f]" : "text-white"
+                } text-base font-semibold hover:text-[#ff9328] transition-colors duration-200`}
               >
                 Team
               </Link>
               <Link
-                href="/blog"
-                className="flex items-center h-full px-6 text-center text-white text-base font-semibold hover:text-[#ff9328] transition-colors duration-200"
+                href={sitePath.blog}
+                className={`flex items-center h-full px-6 text-center ${
+                  pathname !== "/" ? "text-[#29292f]" : "text-white"
+                } text-base font-semibold hover:text-[#ff9328] transition-colors duration-200`}
               >
                 Blog
               </Link>
             </div>
             <div className="flex items-center h-full">
               <Link
-                href="/contactUs"
-                className="flex items-center h-full px-6 text-center text-white text-base font-semibold hover:text-[#ff9328] transition-colors duration-200"
+                href={sitePath.contactUs}
+                className={`flex items-center h-full px-6 text-center ${
+                  pathname !== "/" ? "text-[#29292f]" : "text-white"
+                } text-base font-semibold hover:text-[#ff9328] transition-colors duration-200`}
               >
                 Contact us
               </Link>

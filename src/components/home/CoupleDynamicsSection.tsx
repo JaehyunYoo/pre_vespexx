@@ -12,7 +12,12 @@ const CoupleDynamicsSection = () => {
         <div className="flex flex-col items-center">
           {/* Logo Icon*/}
           <div className="w-32 h-32 relative rounded-3xl shadow mb-10">
-            <Image src="/images/whiteLogo.svg" alt="image" fill />
+            <Image
+              src="/images/signalingWhiteLogo.png"
+              alt="signaling white logo"
+              fill
+              priority
+            />
           </div>
           {/* Title */}
           <h3 className="text-center text-[#1e1e1e] text-5xl font-semibold mb-8">

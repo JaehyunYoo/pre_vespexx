@@ -1,8 +1,6 @@
 "use client";
-import { useEffect } from "react";
-import Lenis from "@studio-freight/lenis";
+import React from "react";
 import { GoArrowRight } from "react-icons/go";
-import Image from "next/image";
 /*components*/
 import MainScrollCardSection from "@/components/home/MainScrollCardSection";
 import CoupleDynamicsSection from "@/components/home/CoupleDynamicsSection";
@@ -11,21 +9,22 @@ import CoupleLifeStyleSection from "@/components/home/CoupleLifeStyleSection";
 import GlobalIntroSection from "@/components/home/GlobalIntroSection";
 import NewsAndMediaSection from "@/components/home/NewsAndMediaSection";
 
+
 export default function Home() {
-  useEffect(() => {
-    const lenis = new Lenis();
+  // useEffect(() => {
+  //   const lenis = new Lenis();
 
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
+  //   function raf(time: number) {
+  //     lenis.raf(time);
+  //     requestAnimationFrame(raf);
+  //   }
 
-    let rafId = requestAnimationFrame(raf);
-    return () => {
-      cancelAnimationFrame(rafId);
-      lenis.destroy();
-    };
-  }, []);
+  //   let rafId = requestAnimationFrame(raf);
+  //   return () => {
+  //     cancelAnimationFrame(rafId);
+  //     lenis.destroy();
+  //   };
+  // }, []);
 
   return (
     <main>
@@ -57,6 +56,9 @@ export default function Home() {
           loop
           playsInline
           preload="auto"
+          onLoad={() => {
+            console.log("video loaded");
+          }}
           className="w-full absolute top-0 left-0 h-full object-cover overscroll-none"
         />
       </section>

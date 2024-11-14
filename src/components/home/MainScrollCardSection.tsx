@@ -47,7 +47,11 @@ const MainScrollCardSection = () => {
           <div className="flex justify-between">
             <div>
               <div className="relative w-[100px] h-[100px] mb-6">
-                <Image src="/images/whiteLogo.svg" alt="image" fill />
+                <Image
+                  src="/images/signalingWhiteLogo.png"
+                  alt="signaling white logo"
+                  fill
+                />
               </div>
               <h2 className="text-[#1e1e1e] text-5xl font-semibold mb-5">
                 It's time to signaling

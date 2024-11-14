@@ -75,13 +75,13 @@ export const coupleDynamicsDataFirst = {
       description: "Manage your schedules according to your preferences",
     },
     {
-      icon: "/images/todo.svg",
+      icon: "/images/icons/todo.png",
       title: "To-do list synced\nwith calendar",
       description:
         "Manage your housechore, tasks, habits, and bucket lists together according to the schedules",
     },
     {
-      icon: "/images/todo.svg",
+      icon: "/images/icons/simple_design.png",
       title: "Simple and Intuitive Design\nfor Maximized Productivity",
       description:
         "with intelligent tools, expert content,and premium lifestyle offerings",
@@ -93,19 +93,19 @@ export const coupleDynamicsDataSecond = {
   title: "For a Better and Lasting Relationship",
   data: [
     {
-      icon: "/images/coupleContents.svg",
+      icon: "/images/icons/couple_contents.png",
       title: "High-Quality Expert Contents\nfor Couples",
       description:
         "Contents to help you better understand your partner and maintain a healthy relationship",
     },
     {
-      icon: "/images/relationship.svg",
+      icon: "/images/icons/care.png",
       title: "Professional Consulting\nfor Relationship Care",
       description:
         "with intelligent tools, expert content, and premium lifestyle offerings",
     },
     {
-      icon: "/images/sharedGoals.svg",
+      icon: "/images/icons/management.png",
       title: "Financial Management\nfor Shared Goals",
       description:
         "with intelligent tools, expert content, and premium lifestyle offerings",
@@ -115,40 +115,40 @@ export const coupleDynamicsDataSecond = {
 
 export const newsAndMediaData: NewsAndMediaDataProps[] = [
   {
-    image: "/images/news/news_01.svg",
+    image: "/images/news/news_01.png",
     title:
       "Vespexx's Couple Wellness App 'Signaling' Expands Monetization and Global Reach",
     link: "/",
     alt: "news_01",
   },
   {
-    image: "/images/news/news_02.svg",
+    image: "/images/news/news_02.png",
     title:
       "'Signaling' Surpasses 200,000 Users, Targets Global Market with Premium Features",
     link: "/",
     alt: "news_02",
   },
   {
-    image: "/images/news/news_03.svg",
+    image: "/images/news/news_03.png",
     title: "Vespexx Launches 'Signaling' in U.S. and Japan",
     link: "/",
     alt: "news_03",
   },
   {
-    image: "/images/news/news_04.svg",
+    image: "/images/news/news_04.png",
     title: "'Signaling' Reaches 200,000 Downloads as Couple Communication Tool",
     link: "/",
     alt: "news_04",
   },
   {
-    image: "/images/news/news_05.svg",
+    image: "/images/news/news_05.png",
     title:
       "'Signaling' Sees Explosive 110% Monthly Growth as a Couple Calendar SaaS",
     link: "/",
     alt: "news_05",
   },
   {
-    image: "/images/news/news_06.svg",
+    image: "/images/news/news_06.png",
     title:
       "Couple Calendar SaaS 'Signaling' Hits 200,000 Downloads in 7 Months",
     link: "/",

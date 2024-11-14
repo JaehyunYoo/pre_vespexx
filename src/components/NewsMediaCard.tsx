@@ -10,6 +10,7 @@ const NewsMediaCard = ({ data }: { data: NewsAndMediaDataProps }) => {
         alt={data.alt ?? "image"}
         width={380}
         height={228}
+        priority
       />
       <h6 className="text-[#29292f] text-xl font-semibold mt-5">
         {data.title}
