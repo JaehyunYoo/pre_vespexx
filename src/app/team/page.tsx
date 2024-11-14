@@ -12,16 +12,17 @@ import GetStartedButton from "@/components/GetStartedButton";
 function Team() {
   return (
     <main>
-      <Image
-        src="/images/team/team_main_bg.png"
-        alt="team background"
-        width={1920}
-        height={640}
-        priority={true}
-        className="w-full h-full object-cover"
-      />
+      <div className="w-full h-[60svh] relative">
+        <Image
+          src="/images/team/team_main_bg.png"
+          alt="team background"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
       <section className="w-full h-full py-[7.5rem]">
-        <div className="max-w-[1200px] mx-auto flex flex-col items-center">
+        <div className="container-lg flex flex-col items-center">
           <h1 className="text-[#1e1e1e] text-5xl font-semibold mb-20">
             Our Team
           </h1>

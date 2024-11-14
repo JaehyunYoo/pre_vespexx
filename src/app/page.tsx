@@ -9,23 +9,7 @@ import CoupleLifeStyleSection from "@/components/home/CoupleLifeStyleSection";
 import GlobalIntroSection from "@/components/home/GlobalIntroSection";
 import NewsAndMediaSection from "@/components/home/NewsAndMediaSection";
 
-
 export default function Home() {
-  // useEffect(() => {
-  //   const lenis = new Lenis();
-
-  //   function raf(time: number) {
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf);
-  //   }
-
-  //   let rafId = requestAnimationFrame(raf);
-  //   return () => {
-  //     cancelAnimationFrame(rafId);
-  //     lenis.destroy();
-  //   };
-  // }, []);
-
   return (
     <main>
       <section className="h-[100svh] relative flex flex-col justify-center items-center ">
@@ -56,9 +40,6 @@ export default function Home() {
           loop
           playsInline
           preload="auto"
-          onLoad={() => {
-            console.log("video loaded");
-          }}
           className="w-full absolute top-0 left-0 h-full object-cover overscroll-none"
         />
       </section>
