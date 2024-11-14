@@ -23,7 +23,10 @@ const CardImage = ({
         className="w-full h-full origin-top bg-white rounded-[25px] relative overflow-hidden shadow"
         style={{
           scale: dataLength - 1 === i ? 1 : scale,
-          top: dataLength - 1 === i ? "0" : `calc(1.5vh + ${i * 20}px)`,
+          top:
+            dataLength - 1 === i
+              ? "0"
+              : `calc(1.5vh + ${i * 20}px)`,
         }}
       >
         <div className="flex flex-col items-center justify-center">

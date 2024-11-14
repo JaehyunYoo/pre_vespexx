@@ -8,27 +8,16 @@ import ReviewSection from "@/components/home/ReviewSection";
 import CoupleLifeStyleSection from "@/components/home/CoupleLifeStyleSection";
 import GlobalIntroSection from "@/components/home/GlobalIntroSection";
 import NewsAndMediaSection from "@/components/home/NewsAndMediaSection";
-
+import GetStartedButton from "@/components/GetStartedButton";
+import AspirationSection from "@/components/home/AspirationSection";
 
 export default function Home() {
-  // useEffect(() => {
-  //   const lenis = new Lenis();
-
-  //   function raf(time: number) {
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf);
-  //   }
-
-  //   let rafId = requestAnimationFrame(raf);
-  //   return () => {
-  //     cancelAnimationFrame(rafId);
-  //     lenis.destroy();
-  //   };
-  // }, []);
-
   return (
     <main>
-      <section className="h-[100svh] relative flex flex-col justify-center items-center ">
+      <section
+        id="aspiration-section"
+        className="h-[100svh] relative flex flex-col justify-center items-center"
+      >
         <p
           className="text-6xl text-center font-bold mb-4 z-10 leading-[81px] inline-block text-transparent bg-clip-text"
           style={{
@@ -43,7 +32,8 @@ export default function Home() {
         <p className="text-[#E9E9E9] text-2xl font-normal z-10">
           Empowering the Most Intimate Relationship to Be Healthier
         </p>
-        <div className="z-10 h-[4.5rem] mt-[2.5rem] px-7 py-5 bg-gradient-to-r from-gradient-start to-gradient-end rounded-[80px] justify-center items-center gap-2.5 inline-flex">
+
+        <div className="z-10 h-[4.5rem] mt-[2.5rem] px-7 py-5 bg-gradient-to-r from-gradient-start to-gradient-end hover:from-[#ff8711] hover:to-[#ffaa55] transition-colors duration-500 ease-in-out rounded-[80px] justify-center items-center gap-2.5 inline-flex">
           <p className="text-center text-white text-[21px] font-bold font-['Pretendard JP'] leading-loose">
             Get Started
           </p>
@@ -56,9 +46,6 @@ export default function Home() {
           loop
           playsInline
           preload="auto"
-          onLoad={() => {
-            console.log("video loaded");
-          }}
           className="w-full absolute top-0 left-0 h-full object-cover overscroll-none"
         />
       </section>
@@ -67,6 +54,7 @@ export default function Home() {
       <ReviewSection />
       <CoupleLifeStyleSection />
       <GlobalIntroSection />
+      <AspirationSection />
       <NewsAndMediaSection />
     </main>
   );

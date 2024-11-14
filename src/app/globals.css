@@ -11,11 +11,14 @@
   .container-xl {
     @apply max-w-[1440px] mx-auto px-10;
   }
+  .container-lg {
+    @apply max-w-[1200px] mx-auto px-10;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }

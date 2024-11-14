@@ -2,9 +2,15 @@ import React from "react";
 import { NewsAndMediaDataProps } from "@/data/data";
 import Image from "next/image";
 
-const NewsMediaCard = ({ data }: { data: NewsAndMediaDataProps }) => {
+const NewsMediaCard = ({
+  data,
+  className,
+}: {
+  data: NewsAndMediaDataProps;
+  className?: string;
+}) => {
   return (
-    <article className="w-full">
+    <article className={`"w-full ${className ?? ""}`}>
       <Image
         src={data.image}
         alt={data.alt ?? "image"}
