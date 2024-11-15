@@ -18,27 +18,30 @@ export default function Home() {
         id="aspiration-section"
         className="h-[100svh] relative flex flex-col justify-center items-center"
       >
-        <p
-          className="text-6xl text-center font-bold mb-4 z-10 leading-[81px] inline-block text-transparent bg-clip-text"
-          style={{
-            backgroundImage:
-              "linear-gradient(275deg, #FBE4FE 25.48%, #FFE5C9 69.72%)",
-          }}
-        >
-          Sound partnerships,
-          <br />
-          Sound individuals
-        </p>
-        <p className="text-[#E9E9E9] text-2xl font-normal z-10">
-          Empowering the Most Intimate Relationship to Be Healthier
-        </p>
+        <div className="w-full text-center z-10">
+          <p
+            className="lg:text-6xl xs:text-4xl text-center font-bold mb-4 z-10  inline-block text-transparent bg-clip-text"
+            style={{
+              backgroundImage:
+                "linear-gradient(275deg, #FBE4FE 25.48%, #FFE5C9 69.72%)",
+            }}
+          >
+            Sound partnerships,
+            <br />
+            Sound individuals
+          </p>
+          <p className="text-[#E9E9E9] lg:text-2xl md:px-0 xs:px-4 xs:text-base font-normal z-10">
+            Empowering the Most Intimate Relationship to Be Healthier
+          </p>
+        </div>
 
-        <div className="z-10 h-[4.5rem] mt-[2.5rem] px-7 py-5 bg-gradient-to-r from-gradient-start to-gradient-end hover:from-[#ff8711] hover:to-[#ffaa55] transition-colors duration-500 ease-in-out rounded-[80px] justify-center items-center gap-2.5 inline-flex">
-          <p className="text-center text-white text-[21px] font-bold font-['Pretendard JP'] leading-loose">
+        <div className="z-10 lg:h-[4.5rem] lg:mt-[2.5rem] lg:px-7 lg:py-5 xs:h-[3.5rem] xs:mt-[1.5rem] xs:px-5 xs:py-3 bg-gradient-to-r from-gradient-start to-gradient-end hover:from-[#ff8711] hover:to-[#ffaa55] transition-colors duration-500 ease-in-out rounded-[80px] justify-center items-center gap-2.5 inline-flex">
+          <p className="text-center text-white lg:text-[21px] xs:text-base font-bold font-['Pretendard JP'] leading-loose">
             Get Started
           </p>
           <GoArrowRight color="white" size={24} />
         </div>
+
         <video
           src="https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/video%2Fmain.mp4?alt=media&token=d46ff5ba-ecc0-4811-9db9-2a27086f7424"
           autoPlay
@@ -49,13 +52,14 @@ export default function Home() {
           className="w-full absolute top-0 left-0 h-full object-cover overscroll-none"
         />
       </section>
+
       <MainScrollCardSection />
-      <CoupleDynamicsSection />
+      {/* <CoupleDynamicsSection />
       <ReviewSection />
       <CoupleLifeStyleSection />
       <GlobalIntroSection />
       <AspirationSection />
-      <NewsAndMediaSection />
+      <NewsAndMediaSection /> */}
     </main>
   );
 }

@@ -7,7 +7,11 @@ const MaxContainer = ({
   children: React.ReactNode;
   className?: string;
 }) => {
-  return <div className={`container-xl ${className || ""}`}>{children}</div>;
+  return (
+    <div className={`w-full lg:container-xl ${className || ""}`}>
+      {children}
+    </div>
+  );
 };
 
 export default MaxContainer;

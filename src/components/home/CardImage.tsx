@@ -18,23 +18,20 @@ const CardImage = ({
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <article className="w-full sticky top-20 ">
+    <article className="w-full sticky top-20 md:px-0 sm:px-10 xs:px-2">
       <motion.div
         className="w-full h-full origin-top bg-white rounded-[25px] relative overflow-hidden shadow"
         style={{
-          scale: dataLength - 1 === i ? 1 : scale,
-          top:
-            dataLength - 1 === i
-              ? "0"
-              : `calc(1.5vh + ${i * 20}px)`,
+          scale: scale,
+          top: `calc(1.5vh + ${i * 20}px)`,
         }}
       >
         <div className="flex flex-col items-center justify-center">
           <div className="py-[60px] px-[40px]">
-            <h4 className="text-[#1e1e1e] text-4xl font-bold mb-4">
+            <h4 className="text-[#1e1e1e] md:text-4xl xs:text-2xl font-bold mb-4 text-center">
               {data.title}
             </h4>
-            <p className="text-[#777777] text-[22px] font-medium text-center">
+            <p className="text-[#777777] md:text-[22px] xs:text-sm font-medium text-center">
               {data.description}
             </p>
           </div>

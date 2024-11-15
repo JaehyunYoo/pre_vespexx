@@ -51,9 +51,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={pretendard.className}>
         <LenisProvider>
-          <Nav />
+          {/* <Nav /> */}
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </LenisProvider>
       </body>
     </html>
