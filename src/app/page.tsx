@@ -26,22 +26,21 @@ export default function Home() {
                 "linear-gradient(275deg, #FBE4FE 25.48%, #FFE5C9 69.72%)",
             }}
           >
-            Sound partnerships,
+            Stay in Sync
             <br />
-            Sound individuals
+            with the One you Love
           </p>
           <p className="text-[#E9E9E9] lg:text-2xl md:px-0 xs:px-4 xs:text-base font-normal z-10">
-            Empowering the Most Intimate Relationship to Be Healthier
+            Helping couples build healthier relationships
           </p>
         </div>
-
-        <div className="z-10 lg:h-[4.5rem] lg:mt-[2.5rem] lg:px-7 lg:py-5 xs:h-[3.5rem] xs:mt-[1.5rem] xs:px-5 xs:py-3 bg-gradient-to-r from-gradient-start to-gradient-end hover:from-[#ff8711] hover:to-[#ffaa55] transition-colors duration-500 ease-in-out rounded-[80px] justify-center items-center gap-2.5 inline-flex">
-          <p className="text-center text-white lg:text-[21px] xs:text-base font-bold font-['Pretendard JP'] leading-loose">
-            Get Started
-          </p>
-          <GoArrowRight color="white" size={24} />
+        <div className="z-10 mt-10">
+          <GetStartedButton
+            title="Get Started"
+            padding="lg:px-7 lg:py-5 xs:px-6 xs:py-4"
+            textSize="lg:text-xl xs:text-base"
+          />
         </div>
-
         <video
           src="https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/video%2Fmain.mp4?alt=media&token=d46ff5ba-ecc0-4811-9db9-2a27086f7424"
           autoPlay
@@ -54,9 +53,9 @@ export default function Home() {
       </section>
 
       <MainScrollCardSection />
-      {/* <CoupleDynamicsSection />
+      <CoupleDynamicsSection />
       <ReviewSection />
-      <CoupleLifeStyleSection />
+      {/*<CoupleLifeStyleSection />
       <GlobalIntroSection />
       <AspirationSection />
       <NewsAndMediaSection /> */}

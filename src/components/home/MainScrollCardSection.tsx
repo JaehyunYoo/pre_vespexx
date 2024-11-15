@@ -3,10 +3,10 @@
 import React, { useRef } from "react";
 import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import { GoArrowRight } from "react-icons/go";
 import CardImage from "./CardImage";
 import MaxContainer from "../MaxContainer";
-import { CardData, homeCardScrollScaleData } from "@/data/data";
+import { homeCardScrollScaleData } from "@/data/data";
+import GetStartedButton from "../GetStartedButton";
 
 export type MainScrollCardProps = {
   progress: MotionValue<number>;
@@ -41,12 +41,12 @@ const MainScrollCardSection = () => {
       style={{ background: backgroundColor }}
       className="w-full lg:py-[15rem] xs:py-16 transition-colors duration-300 ease-in-out"
     >
-      <MaxContainer className="flex flex-col lg:flex-row gap-x-12">
+      <MaxContainer className="flex flex-col lg:flex-row">
         {/* Sidebar */}
-        <div className="w-full lg:h-fit lg:sticky lg:top-20 pt-6">
+        <div className="xl:w-full lg:h-fit lg:sticky lg:top-20 pt-6">
           <div className="flex lg:justify-between xs:flex-row xs:justify-center">
             {/* Left Side*/}
-            <div className="lg:text-left xs:text-center">
+            <div className="lg:text-left xs:text-center mb-10">
               <div className="relative lg:mx-0 lg:w-[100px] lg:h-[100px] xs:w-[80px] xs:h-[80px] xs:mx-auto mb-6">
                 <Image
                   src="/images/signalingWhiteLogo.png"
@@ -55,14 +55,17 @@ const MainScrollCardSection = () => {
                 />
               </div>
               <h2 className="text-[#1e1e1e] md:text-5xl md:px-0 xs:text-3xl xs:px-4 font-semibold mb-5">
-                It's time to signal together
+                It's time to sync together
               </h2>
               <p className="text-[#555555] md:text-2xl xs:text-base font-medium">
-                It's time to be closer & healthier
+                It's time to sync together with Signaling
               </p>
-              <div className="mt-10 mb-[7.5rem] inline-flex items-center justify-center px-7 py-5 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end">
-                <p className="text-white text-[21px] font-bold">Get Started</p>
-                <GoArrowRight color="white" size={24} className="ml-2" />
+              <div className="z-10 mt-10 inline-block">
+                <GetStartedButton
+                  title="Get Started"
+                  padding="lg:px-7 lg:py-5 xs:px-6 xs:py-4"
+                  textSize="lg:text-xl xs:text-base"
+                />
               </div>
             </div>
           </div>

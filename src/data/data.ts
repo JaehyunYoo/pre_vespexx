@@ -29,13 +29,13 @@ export type TeamCardDataProps = {
 
 export const homeCardScrollScaleData: CardData[] = [
   {
-    title: "Connected Calendar",
-    description: "Sync with daily life",
+    title: "Integrated Calendar",
+    description: "Sync with your daily life",
     image: "/images/home/card_calendar.png",
   },
   {
-    title: "Sync the Schedule",
-    description: "Connected Calendar as a Platform",
+    title: "Share Your Schedules",
+    description: "Well-Organized Shared Calendar",
     image: "/images/home/card_schedule.png",
   },
   {
@@ -45,7 +45,7 @@ export const homeCardScrollScaleData: CardData[] = [
   },
   {
     title: "Messenger & Status Mode",
-    description: "Care better with quick status updates",
+    description: "Stay connected with quick status updates",
     image: "/images/home/card_couple_status.png",
   },
 ];
@@ -67,24 +67,24 @@ export const cardUiRelationShipData = [
 ];
 
 export const coupleDynamicsDataFirst = {
-  title: "Bring us closer together",
+  title: "Bringing Relationships Closer Together",
   data: [
     {
       icon: "/images/icons/calendar.png",
-      title: `Calendar Theme\nCustomization`,
-      description: "Manage your schedules according to your preferences",
+      title: `Customizable Calendar Themes`,
+      description: "Personalize calendar themes to match your style",
     },
     {
       icon: "/images/icons/todo.png",
-      title: "To-do list synced\nwith calendar",
+      title: "Calendar Synced To-Do Lists",
       description:
-        "Manage your housechore, tasks, habits, and bucket lists together according to the schedules",
+        "Sync to-do lists, tasks, and habits with your calendar for seamless planning",
     },
     {
       icon: "/images/icons/simple_design.png",
-      title: "Simple and Intuitive Design\nfor Maximized Productivity",
+      title: "Streamlined Design for Productivity",
       description:
-        "with intelligent tools, expert content,and premium lifestyle offerings",
+        "Enjoy intelligent tools and other features for a smoother experience",
     },
   ],
 };
@@ -94,21 +94,21 @@ export const coupleDynamicsDataSecond = {
   data: [
     {
       icon: "/images/icons/couple_contents.png",
-      title: "High-Quality Expert Contents\nfor Couples",
+      title: "Curated Expert Content for Couples",
       description:
-        "Contents to help you better understand your partner and maintain a healthy relationship",
+        "Access expertly curated content to better understand your partner and strengthen your relationship",
     },
     {
       icon: "/images/icons/care.png",
-      title: "Professional Consulting\nfor Relationship Care",
+      title: "Personalized Relationship Consulting",
       description:
-        "with intelligent tools, expert content, and premium lifestyle offerings",
+        "Get tailored guidance for building a healthier, more fulfilling relationship",
     },
     {
       icon: "/images/icons/management.png",
-      title: "Financial Management\nfor Shared Goals",
+      title: "Shared Financial Planning for Couples",
       description:
-        "with intelligent tools, expert content, and premium lifestyle offerings",
+        "Manage shared financial records seamlessly with a synced calendar",
     },
   ],
 };

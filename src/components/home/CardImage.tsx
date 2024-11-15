@@ -27,7 +27,7 @@ const CardImage = ({
         }}
       >
         <div className="flex flex-col items-center justify-center">
-          <div className="py-[60px] px-[40px]">
+          <div className="py-[60px] px-[20px]">
             <h4 className="text-[#1e1e1e] md:text-4xl xs:text-2xl font-bold mb-4 text-center">
               {data.title}
             </h4>

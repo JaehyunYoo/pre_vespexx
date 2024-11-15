@@ -5,11 +5,11 @@ import GetStartedButton from "../GetStartedButton";
 
 const ReviewSection = () => {
   return (
-    <section className="container-xl py-[15rem]">
-      <div className="w-full flex gap-10">
+    <section className="md:container-xl xs:container xs:mx-auto py-[15rem]">
+      <div className="w-full flex lg:flex-row xs:flex-col gap-10">
         {/* Left Sticky */}
-        <div className="w-[42%] h-full sticky top-20">
-          <div className="w-[560px] h-[420px] relative rounded-[24px] overflow-hidden">
+        <div className="lg:w-[42%] h-full lg:sticky lg:top-20">
+          <div className="w-[320px] sm:w-[400px] md:w-[480px] lg:w-[560px] aspect-[560/406] relative rounded-[24px] overflow-hidden">
             <div className="w-full h-full bg-black/50 z-10 flex flex-col items-center justify-center">
               <h4 className="text-white text-4xl font-bold mb-5">
                 Better Together
@@ -25,7 +25,7 @@ const ReviewSection = () => {
               loop
               playsInline
               preload="auto"
-              className="w-full absolute top-0 left-0 h-full object-cover overscroll-none z-[-1]"
+              className="w-full absolute top-0 left-0 h-full object-cover overscroll-none"
             />
           </div>
 
@@ -46,7 +46,7 @@ const ReviewSection = () => {
           {/* Left Review*/}
           <div className="flex w-full">
             {/* Review Card */}
-            <div className="w-full flex flex-col gap-10">
+            {/* <div className="w-full flex flex-col gap-10">
               <ReviewCard
                 image="/images/home/review_left_signaling01.png"
                 title="It's innovative and the developers really understand what we need"
@@ -70,11 +70,11 @@ const ReviewSection = () => {
                 width={360}
                 height={444}
               />
-            </div>
+            </div> */}
           </div>
           {/* Right Review*/}
           <div className="w-full flex flex-col gap-10">
-            <Image
+            {/* <Image
               src="/images/home/right_signaling01.png"
               alt="right signaling contents"
               width={360}
@@ -99,7 +99,7 @@ const ReviewSection = () => {
               title="It's the ultimate productivity tool for couple"
               description="Since it syncs with Google Calendar,we can make all sorts of plans without constantly asking each other about our schedules."
               alt="right signaling contents"
-            />
+            /> */}
           </div>
         </div>
       </div>

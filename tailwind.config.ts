@@ -12,6 +12,9 @@ const config: Config = {
         foreground: "var(--foreground)",
         "gradient-start": "#ff9328",
         "gradient-end": "#feb061",
+        letterSpacing: {
+          custom: "-0.32px",
+        },
       },
       screens: {
         xs: "375px",
