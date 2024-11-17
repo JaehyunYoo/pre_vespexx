@@ -13,10 +13,13 @@ export const Nav = () => {
     contactUs: "/contactUs",
   };
 
-  const [isPassedSection, setIsPassedSection] = useState(false);
+  const [isPassedSection, setIsPassedSection] =
+    useState(false);
 
   useEffect(() => {
-    const targetSection = document.getElementById("aspiration-section");
+    const targetSection = document.getElementById(
+      "aspiration-section"
+    );
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -43,7 +46,8 @@ export const Nav = () => {
   }, []);
   const pathname = usePathname();
   // py-4 px-10
-  const isHomePage = pathname === sitePath.home && isPassedSection;
+  const isHomePage =
+    pathname === sitePath.home && isPassedSection;
   return (
     <header
       className={`fixed top-0 left-0 w-full h-full z-50 max-h-[72px]  ${
@@ -52,23 +56,23 @@ export const Nav = () => {
           : "bg-transparent"
       }`}
     >
-      <nav className="container-xl h-full">
-        <div className="flex h-full items-center justify-center">
+      <nav className='container-xl h-full'>
+        <div className='flex h-full items-center justify-center'>
           {/** Logo */}
           <Link
-            href="/"
-            className="py-4 px-[22px] rounded-full bg-gradient-to-r from-[#fbe4fe] to-orange-100 hover:from-[#fbe4fe] hover:to-[#fff9f1]"
+            href='/'
+            className='py-4 px-[22px] rounded-full bg-gradient-to-r from-[#fbe4fe] to-orange-100 hover:from-[#fbe4fe] hover:to-[#fff9f1]'
           >
             <Image
-              src="/images/logo.png"
-              alt="Vespexx Logo"
+              src='/images/logo.png'
+              alt='Vespexx Logo'
               width={209}
               height={20}
             />
           </Link>
           {/** Menu */}
-          <div className="hidden h-full lg:flex  w-full justify-between items-center">
-            <div className="flex gap-4 items-center h-full">
+          <div className='hidden h-full lg:flex  w-full justify-between items-center'>
+            <div className='flex gap-4 items-center h-full'>
               <Link
                 href={sitePath.team}
                 className={`flex items-center h-full px-6 text-center ${
@@ -94,7 +98,7 @@ export const Nav = () => {
                 Blog
               </Link>
             </div>
-            <div className="flex items-center h-full">
+            <div className='flex items-center h-full'>
               <Link
                 href={sitePath.contactUs}
                 className={`flex items-center h-full px-6 text-center ${
@@ -109,7 +113,6 @@ export const Nav = () => {
               </Link>
             </div>
           </div>
-          {/** Button */}
         </div>
       </nav>
     </header>

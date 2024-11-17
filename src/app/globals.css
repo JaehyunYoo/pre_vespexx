@@ -9,10 +9,16 @@
 
 @layer components {
   .container-xl {
-    @apply max-w-[1440px] mx-auto px-10;
+      @apply w-full mx-auto lg:px-10 xs:px-4; /* Default to full width */
   }
-  .container-lg {
-    @apply max-w-[1200px] mx-auto px-10;
+  .py-c-15 {
+    @apply md:py-[15rem] xs:py-[6rem];
+  }
+
+  @media (min-width: 1441px) {
+      .container-xl {
+          @apply max-w-[1400px] mx-auto px-10; /* Centered with padding */
+      }
   }
 }
 

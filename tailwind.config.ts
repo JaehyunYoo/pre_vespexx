@@ -12,27 +12,27 @@ const config: Config = {
         foreground: "var(--foreground)",
         "gradient-start": "#ff9328",
         "gradient-end": "#feb061",
+        "gradient-hover": "#ff8711",
+        "gradient-hover-end": "#ffaa55",
+        "gradient-scroll": "#ff7e62",
+        "gradient-scroll-end": "#ff4c24",
+        // color custom
+        "color-s-strong": "#1e1e1e",
+        "color-s-neutral": "#555555",
+        "color-s-light-bg": "#F3F6FB",
+        "color-s-light-bg-2": "#F9FBFD",
+        "color-s-accent": "#ff7f63",
         letterSpacing: {
           custom: "-0.32px",
         },
       },
       screens: {
-        xs: "375px",
-        // => @media (min-width: 375px) { ... }
+        xs: "360px",
         sm: "640px",
-        // => @media (min-width: 640px) { ... }
-
-        md: "768px",
-        // => @media (min-width: 768px) { ... }
-
-        lg: "1024px",
-        // => @media (min-width: 1024px) { ... }
-
+        md: "769px",
+        lg: "1025px",
         xl: "1280px",
-        // => @media (min-width: 1280px) { ... }
-
-        "2xl": "1536px",
-        // => @media (min-width: 1536px) { ... }
+        xxl: "1536px",
       },
     },
     fontFamily: {

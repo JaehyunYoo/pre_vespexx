@@ -3,26 +3,35 @@ import { GoArrowRight } from "react-icons/go";
 import MaxContainer from "../MaxContainer";
 import { newsAndMediaData } from "@/data/data";
 import NewsMediaCard from "../NewsMediaCard";
+import Image from "next/image";
+import GetStartedButton from "../GetStartedButton";
 
 const NewsAndMediaSection = () => {
   return (
-    <section className="w-full py-[12.5rem]">
-      <MaxContainer>
-        <h5 className="text-center text-5xl text-[#1e1e1e] font-semibold mb-10">
+    <section className='w-full py-c-15'>
+      <div className='container-xl'>
+        <h5 className='text-center md:text-5xl xs:text-3xl text-color-s-strong font-semibold mb-10'>
           Featured news & media
         </h5>
-        <div className="flex justify-center mb-[6.2rem]">
-          <div className="mt-10 inline-flex items-center justify-center px-7 py-5 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end">
-            <p className="text-white text-[21px] font-bold">Show all</p>
-            <GoArrowRight color="white" size={24} className="ml-2" />
-          </div>
+        <div className='mt-10 flex justify-center mb-10'>
+          <GetStartedButton
+            title='Show all'
+            padding='lg:px-7 lg:py-5 xs:px-6 xs:py-4'
+            textSize='lg:text-xl xs:text-base'
+          />
         </div>
-        <div className="grid grid-cols-3 gap-8 px-20">
-          {newsAndMediaData.slice(0, 3).map((item, index) => (
-            <NewsMediaCard key={index} data={item} />
-          ))}
+        <div className='grid md:grid-cols-3 gap-10'>
+          {newsAndMediaData
+            .slice(0, 3)
+            .map((item, index) => (
+              <NewsMediaCard
+                key={index}
+                data={item}
+                className='col-span-1'
+              />
+            ))}
         </div>
-      </MaxContainer>
+      </div>
     </section>
   );
 };

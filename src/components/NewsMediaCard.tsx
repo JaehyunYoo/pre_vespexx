@@ -11,14 +11,17 @@ const NewsMediaCard = ({
 }) => {
   return (
     <article className={`"w-full ${className ?? ""}`}>
-      <Image
-        src={data.image}
-        alt={data.alt ?? "image"}
-        width={380}
-        height={228}
-        priority
-      />
-      <h6 className="text-[#29292f] text-xl font-semibold mt-5">
+      <div className='relative aspect-[380/228] overflow-hidden'>
+        <Image
+          src={data.image}
+          alt={data.alt ?? "image"}
+          priority
+          fill
+          className='object-cover'
+        />
+      </div>
+
+      <h6 className='text-[#29292f] text-xl font-semibold mt-5'>
         {data.title}
       </h6>
     </article>
