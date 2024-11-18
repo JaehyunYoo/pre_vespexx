@@ -5,16 +5,12 @@ import React from "react";
 function Blog() {
   return (
     <main>
-      <section className="w-full h-full py-[7.5rem]">
-        <div className="container-lg">
-          {/* Contents & News  Category */}
-          <ul className="flex gap-4 mb-10">
-            <li className="text-[#29292f] text-2xl font-semibold">Contents</li>
-          </ul>
+      <section className="w-full h-full py-c-15">
+        <div className="max-w-1200 mx-auto" id="aspiration-section">
           {/* Contents & News  List */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-24 justify-items-center md:px-0 xs:px-4">
             {newsAndMediaData.map((item, index) => (
-              <NewsMediaCard key={index} data={item} className="mb-[8rem]" />
+              <NewsMediaCard key={index} data={item} />
             ))}
           </div>
         </div>

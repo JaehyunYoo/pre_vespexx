@@ -12,7 +12,7 @@ import GetStartedButton from "@/components/GetStartedButton";
 function Team() {
   return (
     <main>
-      <div className="w-full md:h-[60svh] xs:h-[45svh] relative">
+      <div className="w-full md:h-[60svh] xs:h-[40svh] relative">
         <Image
           src="/images/team/team_main_bg.png"
           alt="team background"
@@ -72,7 +72,34 @@ function Team() {
             </div>
           </div>
           {/* Career Team Card */}
-          <article className="w-full px-10 bg-[#FEF7F7] rounded-3xl"></article>
+          <article className="w-full px-10 py-8 bg-[#FEF7F7] rounded-3xl">
+            <div className="grid grid-cols-12">
+              <div className="lg:col-span-7 md:col-span-6 xs:col-span-12">
+                <h4 className="text-[#29292f] lg:text-4xl md:text-2xl xs:text-2xl font-semibold mb-6">
+                  Careers with Vespexx
+                </h4>
+                <p className="text-[#5c5f6c] md:text-lg xs:text-sm font-medium mb-10">
+                  Join our <strong>Vespexx</strong> team
+                  <br />
+                  and revolutionizing couple dynamics
+                </p>
+                <div className="inline-block">
+                  <GetStartedButton title="Explore Careers" />
+                </div>
+              </div>
+              <div className="lg:col-span-5 md:col-span-6 md:block xs:hidden">
+                <div className="flex items-center justify-end">
+                  <Image
+                    src="/images/team/team_careers.png"
+                    alt="Vespexx careers"
+                    width={420}
+                    height={243}
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
           {/* <article className="w-full px-10  my-[6rem] bg-[#FEF7F7] rounded-[1.5rem]">
             <div className="flex justify-between items-center">
               <div className="py-12">

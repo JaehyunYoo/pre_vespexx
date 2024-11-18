@@ -76,7 +76,7 @@ export const Nav = () => {
             />
           </Link>
           {/** Menu */}
-          <div className="lg:block xs:hidden h-full flex  w-full justify-between items-center">
+          <div className="xs:hidden h-full lg:flex w-full justify-between items-center">
             <div className="flex gap-4 items-center h-full">
               <Link
                 href={sitePath.team}
@@ -128,7 +128,13 @@ export const Nav = () => {
                 <IoClose color="#9198a5" size={32} />
               ) : (
                 <RiMenu3Fill
-                  color={isPassedSection ? "black" : "white"}
+                  color={
+                    isPassedSection
+                      ? "black"
+                      : pathname !== "/"
+                      ? "black"
+                      : "white"
+                  }
                   size={32}
                 />
               )}
