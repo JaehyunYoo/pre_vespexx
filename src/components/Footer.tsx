@@ -16,7 +16,7 @@ const Footer = () => {
         <p className="text-[#5c5f6c] text-sm font-medium md:mb-8 xs:mb-4">
           © 2024 Vespexx, Inc.
         </p>
-        <div className="flex items-center justify-center md:block xs:hidden">
+        <div className="hidden md:flex items-center justify-center">
           <span className="text-[#5c5f6c] text-sm font-normal">
             support@vespexx.com
           </span>
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         {/**(mobile footer) */}
-        <div className="md:hidden xs:block mt-3">
+        <div className="hidden xs:block md:hidden mt-3">
           <div className="flex items-center justify-center">
             <span className="text-[#5c5f6c] text-sm font-normal">FAQ</span>
             <div className="px-4">
@@ -70,7 +70,7 @@ const Footer = () => {
               support@vespexx.com
             </span>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center mt-3">
             <span className="text-[#5c5f6c] text-sm font-normal">
               Privacy policy
             </span>

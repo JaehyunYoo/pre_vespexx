@@ -9,16 +9,19 @@
 
 @layer components {
   .container-xl {
-      @apply w-full mx-auto lg:px-10 xs:px-4; /* Default to full width */
+    @apply w-full mx-auto lg:px-10 xs:px-4; /* Default to full width */
   }
   .py-c-15 {
     @apply md:py-[15rem] xs:py-[6rem];
   }
+  .max-w-1200 {
+    @apply xl:max-w-[1200px] lg:max-w-[960px] md:max-w-[720px] xs:max-w-full;
+  }
 
   @media (min-width: 1441px) {
-      .container-xl {
-          @apply max-w-[1400px] mx-auto px-10; /* Centered with padding */
-      }
+    .container-xl {
+      @apply max-w-[1400px] mx-auto px-10; /* Centered with padding */
+    }
   }
 }
 

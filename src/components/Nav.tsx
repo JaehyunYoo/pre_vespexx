@@ -61,7 +61,7 @@ export const Nav = () => {
       }`}
     >
       <nav className="container-xl h-full">
-        <div className="flex h-full items-center md:justify-center xs:justify-between">
+        <div className="flex h-full items-center lg:justify-center xs:justify-between">
           {/** Logo */}
           <Link
             href="/"
@@ -76,7 +76,7 @@ export const Nav = () => {
             />
           </Link>
           {/** Menu */}
-          <div className="md:block xs:hidden h-full lg:flex  w-full justify-between items-center">
+          <div className="lg:block xs:hidden h-full flex  w-full justify-between items-center">
             <div className="flex gap-4 items-center h-full">
               <Link
                 href={sitePath.team}
@@ -119,13 +119,13 @@ export const Nav = () => {
             </div>
           </div>
           {/** Mobile Menu Button*/}
-          <div className="h-full md:hidden xs:block z-50">
+          <div className="h-full lg:hidden xs:block z-50">
             <div
               className="flex items-center justify-center w-full h-full"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? (
-                <IoClose color="#0947ba" size={32} />
+                <IoClose color="#9198a5" size={32} />
               ) : (
                 <RiMenu3Fill
                   color={isPassedSection ? "black" : "white"}
@@ -140,7 +140,7 @@ export const Nav = () => {
           )}
           {isMenuOpen && (
             <motion.div
-              className="absolute top-0 left-0 md:hidden xs:block w-full h-full z-40"
+              className="absolute top-0 left-0 lg:hidden xs:block w-full h-full z-40"
               initial={{ y: -50 }}
               animate={{ y: 0 }}
               transition={{ duration: 0.3 }}
