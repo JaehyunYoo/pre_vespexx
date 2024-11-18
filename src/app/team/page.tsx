@@ -23,7 +23,10 @@ function Team() {
       </div>
       <section className="w-full h-full py-[7.5rem]">
         <div className="container-lg flex flex-col items-center">
-          <h1 className="text-[#1e1e1e] text-5xl font-semibold mb-20">
+          <h1
+            className="text-[#1e1e1e] text-5xl font-semibold mb-20"
+            id="aspiration-section"
+          >
             Our Team
           </h1>
           {/* C-Level Team Card */}
@@ -45,7 +48,10 @@ function Team() {
             ))}
           </div>
           {/* Healthcare Team Card */}
-          <h2 className="text-[#29292f] text-2xl font-semibold mb-12">
+          <h2
+            className="text-[#29292f] text-2xl font-semibold mb-12"
+            id="aspiration-section"
+          >
             Healthcare Team
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-[6rem]">
@@ -76,7 +82,7 @@ function Team() {
                   <GetStartedButton title="Recruits" />
                 </div>
               </div>
-              <div className="py-10">
+              <div className="py-10 md:block xs:hidden">
                 <Image
                   src="/images/team/team_careers.png"
                   alt="product team"

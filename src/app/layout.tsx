@@ -48,12 +48,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <body className={pretendard.className}>
         <LenisProvider>
-          {/* <Nav /> */}
+          <Nav />
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </LenisProvider>
       </body>
     </html>

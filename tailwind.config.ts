@@ -19,6 +19,8 @@ const config: Config = {
         // color custom
         "color-s-strong": "#1e1e1e",
         "color-s-neutral": "#555555",
+        "color-s-gray": "#29292f",
+        "color-s-gray-5": "#9198a5",
         "color-s-light-bg": "#F3F6FB",
         "color-s-light-bg-2": "#F9FBFD",
         "color-s-accent": "#ff7f63",
