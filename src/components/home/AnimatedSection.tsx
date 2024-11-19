@@ -46,7 +46,7 @@ export default function AnimatedSection({
       variants={animations[animation]}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
-      transition={{ duration: 0.8, delay }}
+      transition={{ duration: 0.7, delay }}
       className={`min-h-screen ${className}`}
     >
       {children}

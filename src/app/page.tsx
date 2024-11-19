@@ -22,10 +22,7 @@ export default function Home() {
       <AnimatedSection animation="fadeIn">
         <CoupleLifeStyleSection />
       </AnimatedSection>
-      <AnimatedSection animation="slideUp">
-        <GlobalIntroSection />
-      </AnimatedSection>
-
+      <GlobalIntroSection />
       <AnimatedSection animation="fadeIn">
         <AspirationSection />
       </AnimatedSection>
