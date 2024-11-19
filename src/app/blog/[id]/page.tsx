@@ -2,11 +2,10 @@
 
 import React from "react";
 import { NotionAPI } from "notion-client";
-import { NotionRenderer } from "react-notion-x";
 import BlogDetail from "@/components/BlogDetail";
 
 interface BlogDetailPageProps {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 // Notion API 인스턴스 생성
 
