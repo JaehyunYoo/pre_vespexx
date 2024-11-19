@@ -15,7 +15,7 @@ export default function Home() {
     <main>
       <MainVideoSection />
       <MainScrollCardSection />
-      <AnimatedSection animation="slideLeft">
+      <AnimatedSection animation="fadeIn">
         <CoupleDynamicsSection />
       </AnimatedSection>
 
