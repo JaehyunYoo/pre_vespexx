@@ -21,6 +21,8 @@ export const Nav = () => {
 
   const pathname = usePathname();
 
+  // 현재 경로와 일치하는지 확인
+  const isActive = (path: string) => pathname === path;
   // pathname이 변경될 때마다 실행되는 useEffect를 먼저 배치
   useEffect(() => {
     setIsPassedSection(false);
@@ -83,9 +85,9 @@ export const Nav = () => {
                 className={`flex items-center h-full px-6 text-center ${
                   isHomePage
                     ? "text-[#29292f]"
-                    : pathname !== "/"
-                    ? "text-[#29292f]"
-                    : "text-white"
+                    : pathname !== "/" && isActive(sitePath.team)
+                    ? "text-[#ff9328]"
+                    : "#29292f"
                 } text-base font-semibold hover:text-[#ff9328] transition-colors duration-200`}
               >
                 Team
@@ -95,9 +97,9 @@ export const Nav = () => {
                 className={`flex items-center h-full px-6 text-center ${
                   isHomePage
                     ? "text-[#29292f]"
-                    : pathname !== "/"
-                    ? "text-[#29292f]"
-                    : "text-white"
+                    : pathname !== "/" && isActive(sitePath.blog)
+                    ? "text-[#ff9328]"
+                    : "#29292f"
                 } text-base font-semibold hover:text-[#ff9328] transition-colors duration-200`}
               >
                 Blog
@@ -109,9 +111,9 @@ export const Nav = () => {
                 className={`flex items-center h-full px-6 text-center ${
                   isHomePage
                     ? "text-[#29292f]"
-                    : pathname !== "/"
-                    ? "text-[#29292f]"
-                    : "text-white"
+                    : pathname !== "/" && isActive(sitePath.contactUs)
+                    ? "text-[#ff9328]"
+                    : "#29292f"
                 } text-base font-semibold hover:text-[#ff9328] transition-colors duration-200`}
               >
                 Contact us

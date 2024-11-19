@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import emailjs from "@emailjs/browser";
 import GetStartedButton from "@/components/GetStartedButton";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 import { GoArrowRight } from "react-icons/go";
 
 export interface HookFormTypes {
@@ -12,9 +12,9 @@ export interface HookFormTypes {
   email: string;
   message: string;
 }
+
 function ContactUs() {
   const { register, handleSubmit, reset } = useForm<HookFormTypes>();
-
   const onSubmit = async (
     data: HookFormTypes,
     e?: React.BaseSyntheticEvent
@@ -23,7 +23,7 @@ function ContactUs() {
     try {
       await sendEmail(data);
     } catch (error) {
-      console.error("Error:", error);
+      console.log("Error:", error);
     }
   };
 
@@ -36,10 +36,10 @@ function ContactUs() {
         from_email: data.email,
       };
       emailjs.send(
-        process.env.NEXT_PRIVATE_EMAILJS_SERVICE_ID ?? "",
-        process.env.NEXT_PRIVATE_EMAILJS_TEMPLATE_ID ?? "",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "",
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "",
         templateParams,
-        process.env.NEXT_PRIVATE_EMAILJS_USER_ID ?? ""
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID ?? ""
       );
       alert("Message sent successfully");
       reset();
@@ -119,7 +119,6 @@ function ContactUs() {
                   Fill in the form right and a member of our team will be in
                   touch
                 </p>
-                {/* Form */}
                 <form
                   className="w-full"
                   onSubmit={handleSubmit(onSubmit)}
@@ -136,7 +135,7 @@ function ContactUs() {
                         {...register("firstName")}
                         type="text"
                         placeholder="Your first name"
-                        className="text-sm text-[#727582] font-medium p-4 border border-[#e9ebf1] rounded-xl"
+                        className="text-base text-[#727582] font-medium p-4 border border-[#e9ebf1] rounded-xl"
                       />
                     </div>
                     {/* LastName Name */}
@@ -148,7 +147,7 @@ function ContactUs() {
                         {...register("lastName")}
                         type="text"
                         placeholder="Your last name"
-                        className="text-sm text-[#727582] font-medium p-4 border border-[#e9ebf1] rounded-xl"
+                        className="text-base text-[#727582] font-medium p-4 border border-[#e9ebf1] rounded-xl"
                       />
                     </div>
                   </div>
@@ -161,7 +160,7 @@ function ContactUs() {
                       {...register("email")}
                       type="email"
                       placeholder="Your email"
-                      className="text-sm text-[#727582] font-medium p-4 border border-[#e9ebf1] rounded-xl"
+                      className="text-base text-[#727582] font-medium p-4 border border-[#e9ebf1] rounded-xl"
                     />
                   </div>
                   {/* Message */}
@@ -173,7 +172,7 @@ function ContactUs() {
                       {...register("message")}
                       type="text"
                       placeholder="Your message"
-                      className="text-sm text-[#727582] font-medium p-4 border border-[#e9ebf1] rounded-xl"
+                      className="text-base text-[#727582] font-medium p-4 border border-[#e9ebf1] rounded-xl"
                     />
                   </div>
                   {/* Submit */}
