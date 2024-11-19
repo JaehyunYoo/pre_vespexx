@@ -57,6 +57,7 @@ function ContactUs() {
             fill
             className="object-cover"
             priority
+            id="aspiration-section"
           />
         </div>
         <div className="max-w-1200 mx-auto">

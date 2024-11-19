@@ -1,7 +1,6 @@
 import React from "react";
 import { NotionAPI } from "notion-client";
 import BlogDetail from "@/components/BlogDetail";
-import dynamic from "next/dynamic";
 
 interface BlogDetailPageProps {
   params: Promise<{ id: string }>;

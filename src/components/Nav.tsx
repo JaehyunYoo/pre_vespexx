@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
+import path from "path";
 
 export const Nav = () => {
   const sitePath = {
@@ -21,12 +22,9 @@ export const Nav = () => {
 
   const pathname = usePathname();
 
-  // 현재 경로와 일치하는지 확인
-  const isActive = (path: string) => pathname === path;
-  // pathname이 변경될 때마다 실행되는 useEffect를 먼저 배치
   useEffect(() => {
     setIsPassedSection(false);
-    setIsMenuOpen(false); // 메뉴도 함께 닫아주면 좋을 것 같습니다
+    setIsMenuOpen(false);
   }, [pathname]);
 
   useEffect(() => {
@@ -55,7 +53,17 @@ export const Nav = () => {
       }
     };
   }, [pathname]);
-  const isHomePage = pathname === sitePath.home && isPassedSection;
+
+  /** Home Screen Menu Text Color */
+
+  const getMenuClass = (path: string) => {
+    const isHome = pathname === sitePath.home;
+    if (isHome) {
+      return isPassedSection ? "color-s-gray" : "text-white";
+    }
+
+    return path === pathname ? "text-[#ff9328]" : "color-s-gray";
+  };
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 md:h-[72px] xs:h-16  ${
@@ -82,25 +90,17 @@ export const Nav = () => {
             <div className="flex gap-4 items-center h-full">
               <Link
                 href={sitePath.team}
-                className={`flex items-center h-full px-6 text-center ${
-                  isHomePage
-                    ? "text-[#29292f]"
-                    : pathname !== "/" && isActive(sitePath.team)
-                    ? "text-[#ff9328]"
-                    : "#29292f"
-                } text-base font-semibold hover:text-[#ff9328] transition-colors duration-200`}
+                className={`flex items-center h-full px-6 text-center ${getMenuClass(
+                  sitePath.team
+                )} text-base font-semibold hover:text-[#ff9328] transition-colors duration-200`}
               >
                 Team
               </Link>
               <Link
                 href={sitePath.blog}
-                className={`flex items-center h-full px-6 text-center ${
-                  isHomePage
-                    ? "text-[#29292f]"
-                    : pathname !== "/" && isActive(sitePath.blog)
-                    ? "text-[#ff9328]"
-                    : "#29292f"
-                } text-base font-semibold hover:text-[#ff9328] transition-colors duration-200`}
+                className={`flex items-center h-full px-6 text-center ${getMenuClass(
+                  sitePath.blog
+                )} text-base font-semibold hover:text-[#ff9328] transition-colors duration-200`}
               >
                 Blog
               </Link>
@@ -108,13 +108,9 @@ export const Nav = () => {
             <div className="flex items-center h-full">
               <Link
                 href={sitePath.contactUs}
-                className={`flex items-center h-full px-6 text-center ${
-                  isHomePage
-                    ? "text-[#29292f]"
-                    : pathname !== "/" && isActive(sitePath.contactUs)
-                    ? "text-[#ff9328]"
-                    : "#29292f"
-                } text-base font-semibold hover:text-[#ff9328] transition-colors duration-200`}
+                className={`flex items-center h-full px-6 text-center ${getMenuClass(
+                  sitePath.contactUs
+                )} text-base font-semibold hover:text-[#ff9328] transition-colors duration-200`}
               >
                 Contact us
               </Link>
