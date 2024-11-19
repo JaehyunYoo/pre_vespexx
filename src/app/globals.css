@@ -48,3 +48,7 @@ body {
 .blog-detail ~ footer {
   display: none;
 }
+.blog-detail ~ header,
+body:has(.blog-detail) header {
+  display: none !important;
+}

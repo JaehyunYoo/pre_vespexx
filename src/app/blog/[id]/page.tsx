@@ -1,6 +1,7 @@
 import React from "react";
 import { NotionAPI } from "notion-client";
 import BlogDetail from "@/components/BlogDetail";
+import dynamic from "next/dynamic";
 
 interface BlogDetailPageProps {
   params: Promise<{ id: string }>;
@@ -8,12 +9,11 @@ interface BlogDetailPageProps {
 // Notion API 인스턴스 생성
 
 export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
+  const { id } = await params;
   // Notion 페이지 ID
-  const pageId = "14223ccd8c2c807bb67dc096922bed31";
   const notion = new NotionAPI();
   // Notion 페이지 데이터 가져오기
-  const recordMap = await notion.getPage(pageId);
-  const { id } = await params;
+  const recordMap = await notion.getPage(id);
 
   return <BlogDetail recordMap={recordMap} />;
 }

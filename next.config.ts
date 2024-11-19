@@ -5,7 +5,13 @@ const nextConfig: NextConfig = {
   images: {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
-    domains: ["vespexx.notion.site"],
+    domains: ["firebasestorage.googleapis.com", "notion.so"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
   },
 };
 

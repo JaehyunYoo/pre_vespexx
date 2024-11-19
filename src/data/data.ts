@@ -116,43 +116,42 @@ export const coupleDynamicsDataSecond = {
 export const newsAndMediaData: NewsAndMediaDataProps[] = [
   {
     image: "/images/news/news_01.png",
-    title:
-      "Vespexx's Couple Wellness App 'Signaling' Expands Monetization and Global Reach",
-    link: "/",
-    alt: "news_01",
+    title: "Signaling' Expands Global Reach and Monetization",
+    link: "/blog/14223ccd8c2c807bb67dc096922bed31",
+    alt: "Signaling' Expands Global Reach and Monetization",
   },
   {
     image: "/images/news/news_02.png",
     title:
-      "'Signaling' Surpasses 200,000 Users, Targets Global Market with Premium Features",
-    link: "/",
-    alt: "news_02",
+      "Signaling' Surpasses 200,000 Users, Targets Global Market with Premium Features",
+    link: "/blog/14323ccd8c2c80e4b357cb3fb648f506",
+    alt: "Signaling' Surpasses 200,000 Users, Targets Global Market with Premium Features",
   },
   {
     image: "/images/news/news_03.png",
-    title: "Vespexx Launches 'Signaling' in U.S. and Japan",
-    link: "/",
-    alt: "news_03",
+    title: "Vespexx Launches “Signaling” in the U.S. and Japan",
+    link: "/blog/14323ccd8c2c805db059c18cf67bc563",
+    alt: "Vespexx Launches “Signaling” in the U.S. and Japan",
   },
   {
     image: "/images/news/news_04.png",
-    title: "'Signaling' Reaches 200,000 Downloads as Couple Communication Tool",
-    link: "/",
-    alt: "news_04",
+    title: "“Signaling” Surpasses 200,000 Downloads as Couples' Calendar SaaS",
+    link: "/blog/14323ccd8c2c800ba2d4d972156dd05c",
+    alt: "“Signaling” Surpasses 200,000 Downloads as Couples' Calendar SaaS",
   },
   {
     image: "/images/news/news_05.png",
     title:
-      "'Signaling' Sees Explosive 110% Monthly Growth as a Couple Calendar SaaS",
-    link: "/",
-    alt: "news_05",
+      "“Signaling” Experiences Rapid 110% Monthly Growth as Couples' Calendar SaaS",
+    link: "/blog/14323ccd8c2c80da8c52e92f62c90072",
+    alt: "“Signaling” Experiences Rapid 110% Monthly Growth as Couples' Calendar SaaS",
   },
   {
     image: "/images/news/news_06.png",
     title:
-      "Couple Calendar SaaS 'Signaling' Hits 200,000 Downloads in 7 Months",
-    link: "/",
-    alt: "news_06",
+      "Couple Calendar SaaS “Signaling” Reaches 200,000 Downloads in Just 7 Months",
+    link: "/blog/14323ccd8c2c80e2815ee5e062b2ebe3",
+    alt: "Couple Calendar SaaS “Signaling” Reaches 200,000 Downloads in Just 7 Months",
   },
 ];
 
