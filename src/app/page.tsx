@@ -15,17 +15,17 @@ export default function Home() {
     <main>
       <MainVideoSection />
       <MainScrollCardSection />
+      <CoupleDynamicsSection />
       <AnimatedSection animation="fadeIn">
-        <CoupleDynamicsSection />
+        <ReviewSection />
       </AnimatedSection>
-
-      <ReviewSection />
       <AnimatedSection animation="fadeIn">
         <CoupleLifeStyleSection />
       </AnimatedSection>
-      <AnimatedSection animation="scale">
+      <AnimatedSection animation="slideUp">
         <GlobalIntroSection />
       </AnimatedSection>
+
       <AnimatedSection animation="fadeIn">
         <AspirationSection />
       </AnimatedSection>

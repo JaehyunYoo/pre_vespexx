@@ -15,15 +15,15 @@ const animations = {
     visible: { opacity: 1 },
   },
   slideUp: {
-    hidden: { opacity: 0, y: 100 },
+    hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
   },
   slideLeft: {
-    hidden: { opacity: 0, x: -100 },
+    hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0 },
   },
   scale: {
-    hidden: { opacity: 0, scale: 0.6 },
+    hidden: { opacity: 0, scale: 0.7 },
     visible: { opacity: 1, scale: 1 },
   },
 };
@@ -36,7 +36,7 @@ export default function AnimatedSection({
 }: AnimatedSectionProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, {
-    amount: 0.4,
+    amount: 0.2,
     once: true,
   });
 
