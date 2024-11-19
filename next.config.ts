@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
-    domains: [],
+    domains: ["vespexx.notion.site"],
   },
 };
 
