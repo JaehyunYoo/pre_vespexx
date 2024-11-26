@@ -5,13 +5,22 @@ const nextConfig: NextConfig = {
   images: {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
-    domains: ["firebasestorage.googleapis.com", "notion.so"],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**",
-      },
+    domains: [
+      "firebasestorage.googleapis.com",
+      "img.notionusercontent.com",
+      "www.notion.so",
+      "s3.us-west-2.amazonaws.com",
+      "prod-files-secure.s3.us-west-2.amazonaws.com",
+      "prod-files-secure.s3-us-west-2.amazonaws.com",
+      "s3-us-west-2.amazonaws.com",
+      "files.slack.com",
     ],
+    // remotePatterns: [
+    //   {
+    //     protocol: "https",
+    //     hostname: "**",
+    //   },
+    // ],
   },
 };
 

@@ -10,7 +10,7 @@ const CoupleLifeStyleSection = () => {
           In just 7 months
         </p>
         <h5 className='md:text-5xl xs:text-3xl font-semibold text-[#1e1e1e] text-center md:mb-32 xs:mb-14'>
-          Transforming couples' lifestyles at a rapid pace
+          Transform couple's daily life at a rapid pace
         </h5>
         <div className='grid lg:grid-cols-3 gap-x-10 gap-y-8 '>
           <div className='bg-white rounded-[20px] md:p-10'>

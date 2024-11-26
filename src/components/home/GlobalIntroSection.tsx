@@ -6,7 +6,7 @@ const GlobalIntroSection = () => {
     <section className='w-full py-c-15'>
       <div className='container mx-auto md:px-0 xs:px-4'>
         <span className='text-center text-[#ff7e62] md:text-2xl xs:text-xl font-semibold mb-8 block'>
-          Use in 77 countries
+          Trusted by users in 100+ countries
         </span>
         <h5 className='text-center text-[#1e1e1e] md:text-5xl xs:text-3xl font-semibold md:mb-0 xs:mb-14'>
           Connecting More Couples Worldwide

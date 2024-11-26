@@ -15,18 +15,22 @@ export default function Home() {
     <main>
       <MainVideoSection />
       <MainScrollCardSection />
-      <CoupleDynamicsSection />
-      <AnimatedSection animation="fadeIn">
+      <AnimatedSection animation='fadeIn'>
+        <CoupleDynamicsSection />
+      </AnimatedSection>
+      <AnimatedSection animation='fadeIn'>
         <ReviewSection />
       </AnimatedSection>
-      <AnimatedSection animation="fadeIn">
+      <AnimatedSection animation='fadeIn'>
         <CoupleLifeStyleSection />
       </AnimatedSection>
-      <GlobalIntroSection />
-      <AnimatedSection animation="fadeIn">
+      <AnimatedSection animation='scale'>
+        <GlobalIntroSection />
+      </AnimatedSection>
+      <AnimatedSection animation='fadeIn'>
         <AspirationSection />
       </AnimatedSection>
-      <AnimatedSection animation="scale">
+      <AnimatedSection animation='scale'>
         <NewsAndMediaSection />
       </AnimatedSection>
     </main>

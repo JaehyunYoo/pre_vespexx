@@ -14,9 +14,9 @@ const CoupleDynamicsSection = () => {
       <div className='container-xl'>
         <div className='flex flex-col items-center'>
           {/* Logo Icon*/}
-          <div className='md:w-32 md:h-32 xs:w-24 xs:h-24 relative rounded-3xl shadow mb-10 '>
+          <div className='md:w-32 md:h-32 xs:w-24 xs:h-24 relative rounded-3xl mb-10 drop-shadow-custom'>
             <Image
-              src='/images/signalingWhiteLogo.png'
+              src='/images/icons/signaling_logo.png'
               alt='signaling white logo'
               fill
               priority
@@ -24,8 +24,7 @@ const CoupleDynamicsSection = () => {
           </div>
           {/* Title */}
           <h3 className='text-center text-color-s-strong md:text-5xl xs:text-[28px] font-semibold mb-8'>
-            Making Relationships
-            <br />
+            Make Relationships <br />
             More Dynamic and Connected
           </h3>
           {/* Description */}

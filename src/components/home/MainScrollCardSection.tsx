@@ -31,11 +31,11 @@ const MainScrollCardSection = () => {
     scrollYProgress,
     [0, 0.25, 0.5, 0.75],
     [
-      // "linear-gradient(120deg, #FFF0DB 0%, #FBE7FF 100%)", // 원본 css
-      "linear-gradient(to bottom right, #fff0da, #fae2ff)",
-      "linear-gradient(to bottom right, #f4d4a4, #f3cafb",
-      "linear-gradient(to bottom right, #f9dcb1, #f0bafb",
-      "linear-gradient(to bottom right, #fff0da, #fae2ff",
+      // "linear-gradient(120deg, #FFF0DB 0%, #F8D3FF 100%)", // 원본 css
+      "linear-gradient(to bottom right, #FFF0DB, #F8D3FF)",
+      "linear-gradient(to bottom right, #f4d4a4, #F8D3FF",
+      "linear-gradient(to bottom right, #f9dcb1, #F8D3FF",
+      "linear-gradient(to bottom right, #fff0da, #F8D3FF",
     ]
   );
 
@@ -48,9 +48,9 @@ const MainScrollCardSection = () => {
       <div className='container-xl grid items-start lg:grid-cols-11'>
         {/* left */}
         <div className='lg:col-span-5 xs:col-span-11 lg:sticky lg:top-20 pt-6 lg:text-left xs:text-center'>
-          <div className='relative lg:w-28 lg:h-28 xs:w-20 xs:h-20 inline-block'>
+          <div className='relative lg:w-28 lg:h-28 xs:w-20 xs:h-20 inline-block drop-shadow-custom'>
             <Image
-              src='/images/signalingWhiteLogo.png'
+              src='/images/icons/signaling_logo.png'
               alt='signaling white logo'
               fill
             />

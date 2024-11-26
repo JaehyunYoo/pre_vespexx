@@ -67,7 +67,7 @@ export const cardUiRelationShipData = [
 ];
 
 export const coupleDynamicsDataFirst = {
-  title: "Bringing Relationships Closer Together",
+  title: "Bring Relationships Closer Together",
   data: [
     {
       icon: "/images/icons/calendar.png",
@@ -240,3 +240,11 @@ export const financeTeamData: TeamCardDataProps[] = [
     alt: "Lead H.I. Kim",
   },
 ];
+
+export const linkData = {
+  android:"https://play.google.com/store/apps/details?id=com.vespexx.signal&gl=us&hl=en",
+  ios: "https://apps.apple.com/us/app/signaling-calendar-for-couple/id6474220479?l=us&platform=iphone",
+  privacyPolicy: "https://signaling.zendesk.com/hc/en-us/articles/37568540881049-Privacy-Policy",
+  termsOfService: "https://signaling.zendesk.com/hc/en-us/articles/37567865207321-Term-of-Use",
+  faq:"https://signaling.zendesk.com/hc/en-us/sections/37936551442457-FAQ",
+};

@@ -7,6 +7,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        'custom': '0px 4px 24px rgba(0, 0, 0, 0.15)',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -22,7 +25,7 @@ const config: Config = {
         "color-s-gray": "#29292f",
         "color-s-gray-5": "#9198a5",
         "color-s-light-bg": "#F3F6FB",
-        "color-s-light-bg-2": "#F9FBFD",
+        "color-s-light-bg-2": "#F3F6F9",
         "color-s-accent": "#ff7f63",
         letterSpacing: {
           custom: "-0.32px",
