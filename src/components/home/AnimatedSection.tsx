@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { motion, useInView } from "framer-motion";
 import { useRef, ReactNode } from "react";
 
@@ -15,7 +15,7 @@ const animations = {
     visible: { opacity: 1 },
   },
   slideUp: {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 100 },
     visible: { opacity: 1, y: 0 },
   },
   slideLeft: {
@@ -30,7 +30,6 @@ const animations = {
 
 export default function AnimatedSection({
   children,
-  className = "",
   delay = 0,
   animation = "fadeIn",
 }: AnimatedSectionProps) {
@@ -46,8 +45,7 @@ export default function AnimatedSection({
       variants={animations[animation]}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
-      transition={{ duration: 0.7, delay }}
-      className={`min-h-screen ${className}`}
+      transition={{ duration: 0.8, delay }}
     >
       {children}
     </motion.section>

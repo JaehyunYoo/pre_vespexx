@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
-  description: "Vespexx Contact Us Your Feedback",
+  title: "Recruiting",
+  description: "Join Us in Expanding into the Global Market with Vespexx!",
 };
 export default function ContactUsLayout({
   children,

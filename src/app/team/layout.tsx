@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
-  description: "Vespexx Contact Us Your Feedback",
+  title: "Team",
+  description: "Vespexx Team Information",
 };
-export default function ContactUsLayout({
+export default function TeamLayout({
   children,
 }: {
   children: React.ReactNode;

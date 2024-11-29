@@ -32,7 +32,7 @@ const config: Config = {
         },
       },
       screens: {
-        xs: "360px",
+        xs: "320px",
         sm: "640px",
         md: "769px",
         lg: "1025px",
