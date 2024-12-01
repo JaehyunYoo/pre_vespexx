@@ -4,6 +4,9 @@ import { Navigation } from "swiper/modules";
 import Image from "next/image";
 import { Swiper as SwiperType } from "swiper";
 import { MdClose } from "react-icons/md";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
 
 import { popUpDate } from "@/data/data";
 const PopUp = () => {
