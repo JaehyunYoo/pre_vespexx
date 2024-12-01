@@ -39,7 +39,7 @@ export const homeCardScrollScaleData: CardData[] = [
     image: "/images/home/card_schedule.png",
   },
   {
-    title: "Manage health together",
+    title: "Manage Health Together",
     description: "Health Record, Menstrual Cycle, Mental Care",
     image: "/images/home/card_health.png",
   },
@@ -255,11 +255,19 @@ export const popUpDate = [
     desktop: "https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/web_popup%2Fdesktop_popup_01.png?alt=media&token=62953a4a-629d-4b71-a024-cf583b603f15",
     mobile: "https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/web_popup%2Fmobile_carousel_01.png?alt=media&token=6226d297-b7a7-47a9-8c79-8c93e0359c5a",
     alt: "CES PopUp Image 1",
+    link: "/ces",
   },
   {
     id: 2,
     desktop: "https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/web_popup%2Fdesktop_popup_02.png?alt=media&token=b88b7c3c-4073-4253-b76d-e92283eb982b",
     mobile: "https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/web_popup%2Fmobile_carousel_01.png?alt=media&token=6226d297-b7a7-47a9-8c79-8c93e0359c5a",
     alt: "CES PopUp Image 2",
+    link: "/ces",
   },
 ];
+
+
+export const  notionPageId = {
+  careers:"b6c3a8e3714d4911914771a8b3a98a0b",
+  ces:"14523ccd8c2c808a9743ff99d570c255",
+}

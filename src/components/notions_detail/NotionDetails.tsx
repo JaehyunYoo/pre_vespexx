@@ -3,15 +3,18 @@
 import React from "react";
 import { NotionRenderer } from "react-notion-x";
 import { ExtendedRecordMap } from "notion-types";
+import Footer from "../Footer";
+import { CommonHeader } from "../header/CommonHeader";
 
-const CareerDetail = ({
+const NotionDetailPage = ({
   recordMap,
 }: {
   recordMap: ExtendedRecordMap;
 }) => {
   return (
     <main className='blog-detail w-full h-full relative'>
-      <div className='absolute top-0 left-0 w-full h-full z-20'>
+      <div className=''>
+        <CommonHeader />
         {recordMap && (
           <NotionRenderer
             recordMap={recordMap}
@@ -21,8 +24,9 @@ const CareerDetail = ({
           />
         )}
       </div>
+      <Footer />
     </main>
   );
 };
 
-export default CareerDetail;
+export default NotionDetailPage;

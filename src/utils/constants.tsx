@@ -11,7 +11,3 @@ export const storeLink = {
   android:
     "https://apps.apple.com/us/app/signaling-calendar-for-couple/id6474220479?l=us&platform=iphone",
 };
-
-export const pageId = {
-  recruiting: "b6c3a8e3714d4911914771a8b3a98a0b",
-};

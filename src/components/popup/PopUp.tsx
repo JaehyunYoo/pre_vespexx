@@ -1,14 +1,17 @@
+"use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { MdClose } from "react-icons/md";
+import { popUpDate } from "@/data/data";
+// Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import Image from "next/image";
 import { Swiper as SwiperType } from "swiper";
-import { MdClose } from "react-icons/md";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 
-import { popUpDate } from "@/data/data";
 const PopUp = () => {
   // 슬라이드 총 개수
   const totalSlides = 2;
@@ -148,13 +151,18 @@ const PopUp = () => {
                       key={item.id}
                       className='flex items-center justify-center'
                     >
-                      <Image
-                        src={src}
-                        alt={item.alt}
-                        width={isMobile ? 400 : 520}
-                        height={isMobile ? 500 : 650}
-                        className='object-cover mx-auto'
-                      />
+                      <Link
+                        href={item.link}
+                        target='_blank'
+                      >
+                        <Image
+                          src={src}
+                          alt={item.alt}
+                          width={isMobile ? 400 : 520}
+                          height={isMobile ? 500 : 650}
+                          className='object-cover mx-auto'
+                        />
+                      </Link>
                     </SwiperSlide>
                   );
                 })}

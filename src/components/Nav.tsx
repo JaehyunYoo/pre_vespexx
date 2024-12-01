@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
-import { pageId } from "@/utils/constants";
 
 export const Nav = () => {
   const sitePath = {
