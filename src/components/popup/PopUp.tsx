@@ -36,56 +36,56 @@ const PopUp = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const handleScroll = (e: TouchEvent | WheelEvent) => {
-      if (showPopup) {
-        e.preventDefault();
-        e.stopPropagation();
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = (e: TouchEvent | WheelEvent) => {
+  //     if (showPopup) {
+  //       e.preventDefault();
+  //       e.stopPropagation();
+  //     }
+  //   };
 
-    if (showPopup) {
-      document.body.style.overflow = "hidden";
-      document.body.style.height = "100vh";
-      document.body.style.touchAction = "none";
+  //   if (showPopup) {
+  //     document.body.style.overflow = "hidden";
+  //     document.body.style.height = "100vh";
+  //     document.body.style.touchAction = "none";
 
-      // 이벤트 리스너 추가
-      document.addEventListener("wheel", handleScroll, {
-        passive: false,
-      });
-      document.addEventListener("touchmove", handleScroll, {
-        passive: false,
-      });
-    } else {
-      document.body.style.overflow = "unset";
-      document.body.style.height = "auto";
-      document.body.style.touchAction = "auto";
+  //     // 이벤트 리스너 추가
+  //     document.addEventListener("wheel", handleScroll, {
+  //       passive: false,
+  //     });
+  //     document.addEventListener("touchmove", handleScroll, {
+  //       passive: false,
+  //     });
+  //   } else {
+  //     document.body.style.overflow = "unset";
+  //     document.body.style.height = "auto";
+  //     document.body.style.touchAction = "auto";
 
-      // 이벤트 리스너 제거
-      document.removeEventListener("wheel", handleScroll);
-      document.removeEventListener(
-        "touchmove",
-        handleScroll
-      );
-    }
+  //     // 이벤트 리스너 제거
+  //     document.removeEventListener("wheel", handleScroll);
+  //     document.removeEventListener(
+  //       "touchmove",
+  //       handleScroll
+  //     );
+  //   }
 
-    return () => {
-      document.body.style.overflow = "unset";
-      document.body.style.height = "auto";
-      document.body.style.touchAction = "auto";
-      document.removeEventListener("wheel", handleScroll);
-      document.removeEventListener(
-        "touchmove",
-        handleScroll
-      );
-    };
-  }, [showPopup]);
+  //   return () => {
+  //     document.body.style.overflow = "unset";
+  //     document.body.style.height = "auto";
+  //     document.body.style.touchAction = "auto";
+  //     document.removeEventListener("wheel", handleScroll);
+  //     document.removeEventListener(
+  //       "touchmove",
+  //       handleScroll
+  //     );
+  //   };
+  // }, [showPopup]);
 
   return (
     <>
       {showPopup && (
         <>
-          <div className='absolute top-0 left-0 w-full h-full z-50 flex items-center justify-center bg-black/30'>
+          <div className='fixed top-0 left-0 w-full h-full z-50 flex items-center justify-center bg-black/60'>
             <div className='w-full lg:max-w-[650px] sm:max-w[400px] xs:max-w-[320px] lg:mb-0 xs:mb-10 relative'>
               <div className='absolute lg:top-[35%] xs:top-[-12%] lg:right-[-10px] xs:right-0'>
                 <Image
