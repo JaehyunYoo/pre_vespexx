@@ -55,3 +55,15 @@ body {
 body:has(.blog-detail) header {
   display: none !important;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important; /* 화살표 색상 */
+  width: 50px !important; /* 화살표 영역 크기 */
+  height: 50px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 24px !important; /* 화살표 아이콘 크기 */
+}

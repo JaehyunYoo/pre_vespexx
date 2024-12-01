@@ -248,3 +248,18 @@ export const linkData = {
   termsOfService: "https://signaling.zendesk.com/hc/en-us/articles/37567865207321-Term-of-Use",
   faq:"https://signaling.zendesk.com/hc/en-us/sections/37936551442457-FAQ",
 };
+
+export const popUpDate = [
+  {
+    id: 1,
+    desktop: "https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/web_popup%2Fdesktop_popup_01.png?alt=media&token=62953a4a-629d-4b71-a024-cf583b603f15",
+    mobile: "https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/web_popup%2Fmobile_carousel_01.png?alt=media&token=6226d297-b7a7-47a9-8c79-8c93e0359c5a",
+    alt: "CES PopUp Image 1",
+  },
+  {
+    id: 2,
+    desktop: "https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/web_popup%2Fdesktop_popup_02.png?alt=media&token=b88b7c3c-4073-4253-b76d-e92283eb982b",
+    mobile: "https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/web_popup%2Fmobile_carousel_01.png?alt=media&token=6226d297-b7a7-47a9-8c79-8c93e0359c5a",
+    alt: "CES PopUp Image 2",
+  },
+];
