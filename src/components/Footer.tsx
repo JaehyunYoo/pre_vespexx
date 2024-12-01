@@ -73,9 +73,13 @@ const Footer = () => {
         {/**(mobile footer) */}
         <div className='hidden xs:block md:hidden mt-3'>
           <div className='flex items-center justify-center'>
-            <span className='text-[#5c5f6c] text-sm font-normal'>
+            <Link
+              href={linkData.faq}
+              target='_blank'
+              className='text-[#5c5f6c] text-sm font-normal'
+            >
               FAQ
-            </span>
+            </Link>
             <div className='px-4'>
               <Image
                 src='/images/v_divider.svg'
@@ -89,9 +93,13 @@ const Footer = () => {
             </span>
           </div>
           <div className='flex items-center justify-center mt-3'>
-            <span className='text-[#5c5f6c] text-sm font-normal'>
+            <Link
+              href={linkData.privacyPolicy}
+              target='_blank'
+              className='text-[#5c5f6c] text-sm font-normal'
+            >
               Privacy policy
-            </span>
+            </Link>
             <div className='px-4'>
               <Image
                 src='/images/v_divider.svg'
@@ -100,9 +108,13 @@ const Footer = () => {
                 height={0}
               />
             </div>
-            <span className='text-[#5c5f6c] text-sm font-normal'>
+            <Link
+              href={linkData.termsOfService}
+              target='_blank'
+              className='text-[#5c5f6c] text-sm font-normal'
+            >
               Terms of service
-            </span>
+            </Link>
           </div>
         </div>
       </div>
