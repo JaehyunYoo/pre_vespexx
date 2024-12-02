@@ -5,6 +5,7 @@ import { Nav } from "@/components/Nav";
 import Footer from "@/components/Footer";
 import LenisProvider from "@/components/LenisProvider";
 import { metaDataLayout } from "@/utils/constants";
+import PageTransition from "@/components/PageTransition";
 
 const pretendard = localFont({
   src: [
@@ -67,11 +68,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={pretendard.className}>
-        <LenisProvider>
-          <Nav />
-          {children}
-          <Footer />
-        </LenisProvider>
+        <PageTransition>
+          <LenisProvider>
+            <Nav />
+            {children}
+            <Footer />
+          </LenisProvider>
+        </PageTransition>
       </body>
     </html>
   );

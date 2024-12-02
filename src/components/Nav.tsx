@@ -20,38 +20,20 @@ export const Nav = () => {
 
   const [isPassedSection, setIsPassedSection] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const pathname = usePathname();
 
   useEffect(() => {
-    setIsPassedSection(false);
-    setIsMenuOpen(false);
-  }, [pathname]);
-
-  useEffect(() => {
-    const targetSection = document.getElementById("aspiration-section");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          setIsPassedSection(!entry.isIntersecting);
-        });
-      },
-      {
-        // root: null, // viewport 기준
-        threshold: 0, // 0%만 보여도 감지
-        rootMargin: "-80px 0px 0px 0px", // 헤더 높이만큼 상단 여백 조정
-      }
-    );
-
-    if (targetSection) {
-      observer.observe(targetSection);
-    }
-
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsPassedSection(scrollPosition > 80);
+      setIsMenuOpen(false);
+    };
+    // 초기 상태 설정
+    handleScroll();
+    // 스크롤 이벤트 리스너 등록
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      if (targetSection) {
-        observer.unobserve(targetSection);
-      }
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [pathname]);
 
@@ -62,12 +44,11 @@ export const Nav = () => {
     if (isHome) {
       return isPassedSection ? "text-color-s-strong" : "text-white";
     }
-
     return path === pathname ? "text-[#ff9328]" : "text-color-s-gray";
   };
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 md:h-[72px] xs:h-16  ${
+      className={`fixed top-0 left-0 w-full z-40 md:h-[72px] xs:h-16  ${
         isPassedSection == true || pathname === "/blog"
           ? "bg-white"
           : "bg-transparent"
