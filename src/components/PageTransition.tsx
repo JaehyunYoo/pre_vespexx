@@ -15,7 +15,7 @@ const PageTransition = ({ children }: { children: React.ReactNode }) => {
           initial={{ opacity: 1 }}
           animate={{
             opacity: 0,
-            transition: { delay: 0.8, duration: 0.4, ease: "easeInOut" },
+            transition: { delay: 1.2, duration: 0.8, ease: "easeInOut" },
           }}
           exit={{ opacity: 0 }}
           onAnimationStart={() => {
@@ -35,7 +35,7 @@ const PageTransition = ({ children }: { children: React.ReactNode }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{
-                duration: 0.2,
+                duration: 0.6,
                 delay: 0.1,
               }}
             >
