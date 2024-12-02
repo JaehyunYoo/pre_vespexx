@@ -8,7 +8,11 @@ const config: Config = {
   theme: {
     extend: {
       dropShadow: {
-        'custom': '0px 4px 24px rgba(0, 0, 0, 0.15)',
+        custom: "0px 4px 24px rgba(0, 0, 0, 0.15)",
+      },
+      boxShadow: {
+        "lg-x":
+          "10px 0 15px -3px rgb(0 0 0 / 0.1), 4px 0 6px -4px rgb(0 0 0 / 0.1)",
       },
       colors: {
         background: "var(--background)",

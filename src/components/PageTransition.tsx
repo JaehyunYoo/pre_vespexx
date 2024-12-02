@@ -15,7 +15,7 @@ const PageTransition = ({ children }: { children: React.ReactNode }) => {
           initial={{ opacity: 1 }}
           animate={{
             opacity: 0,
-            transition: { delay: 1, duration: 0.9, ease: "easeInOut" },
+            transition: { delay: 0.8, duration: 0.4, ease: "easeInOut" },
           }}
           exit={{ opacity: 0 }}
           onAnimationStart={() => {
@@ -30,13 +30,21 @@ const PageTransition = ({ children }: { children: React.ReactNode }) => {
             <span className="text-white md:text-2xl xs:text-xl font-semibold inline-block mb-4">
               Vespexx <span className="text-[#FE9800]">Signaling</span>
             </span>
-            <h1 className="md:text-4xl xs:text-2xl text-white font-bold text-center">
-              CES 2025 <br />
+            <motion.h1
+              className="md:text-4xl xs:text-2xl text-white font-bold text-center"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 0.2,
+                delay: 0.1,
+              }}
+            >
+              CES 2025
+              <br />
               Innovation Showcase
-            </h1>
+            </motion.h1>
           </div>
         </motion.div>
-
         {children}
       </div>
     </AnimatePresence>
