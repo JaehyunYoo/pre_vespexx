@@ -10,7 +10,6 @@ const MainVideoSection = () => {
       className="h-[100svh] relative flex flex-col justify-center items-center"
     >
       <PopUp />
-
       <div className="w-full text-center z-10">
         <p
           className="lg:text-6xl xs:text-4xl text-center font-bold mb-4 z-10  inline-block text-transparent bg-clip-text"
