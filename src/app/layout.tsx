@@ -4,6 +4,7 @@ import "./globals.css";
 import { Nav } from "@/components/Nav";
 import Footer from "@/components/Footer";
 import LenisProvider from "@/components/LenisProvider";
+import { metaDataLayout } from "@/utils/constants";
 
 const pretendard = localFont({
   src: [
@@ -40,28 +41,15 @@ const pretendard = localFont({
 /*Metadata*/
 export const metadata: Metadata = {
   title: {
-    template: "Vespexx | %s",
-    default: "Vespexx",
+    template: `${metaDataLayout.title} | %s`,
+    default: metaDataLayout.title,
   },
-  description: "Stay in Sync with the One you Love",
+  description: metaDataLayout.description,
   icons: {
-    icon: "/ico/favicon.png",
+    icon: metaDataLayout.icon,
   },
-  openGraph: {
-    type: "website",
-    title: "Vespexx",
-    url: "https://vespexx.com",
-    description: "Stay in Sync with the One you Love",
-    siteName: "Vespexx | Signaling",
-    locale: "en_US",
-    images: [
-      {
-        url: `/images/og/og_image.png`,
-        width: 1200,
-        height: 600,
-      },
-    ],
-  },
+  keywords: metaDataLayout.keywords,
+  openGraph: metaDataLayout.openGraph,
 };
 /*Viewport*/
 export const viewport: Viewport = {

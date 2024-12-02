@@ -1,11 +1,10 @@
-import { metaDataLayout } from "@/utils/constants";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Team",
-  description: metaDataLayout.description,
+  title: "Blog & News Detail",
+  description: "Vespexx Blog & News Detail Information",
 };
-export default function TeamLayout({
+export default function BlogDetailLayout({
   children,
 }: {
   children: React.ReactNode;

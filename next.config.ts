@@ -15,12 +15,14 @@ const nextConfig: NextConfig = {
       "s3-us-west-2.amazonaws.com",
       "files.slack.com",
     ],
-    // remotePatterns: [
-    //   {
-    //     protocol: "https",
-    //     hostname: "**",
-    //   },
-    // ],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "firebasestorage.googleapis.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
   },
 };
 
