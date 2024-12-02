@@ -28,9 +28,6 @@ export default function Home() {
         <GlobalIntroSection />
       </AnimatedSection>
       <AnimatedSection animation="fadeIn">
-        <GlobalIntroSection />
-      </AnimatedSection>
-      <AnimatedSection animation="fadeIn">
         <AspirationSection />
       </AnimatedSection>
       <AnimatedSection animation="scale">
