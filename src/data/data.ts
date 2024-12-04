@@ -256,18 +256,18 @@ export const popUpDate = [
   {
     id: 1,
     desktop:
-      "https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/web_popup%2Fdesktop_popup_01.png?alt=media&token=62953a4a-629d-4b71-a024-cf583b603f15",
+      "https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/web_popup%2Fdesktop_popup1.png?alt=media&token=33c98271-7496-478b-a4a8-ef35a18e9970",
     mobile:
-      "https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/web_popup%2Fmobile_carousel_01.png?alt=media&token=6226d297-b7a7-47a9-8c79-8c93e0359c5a",
+      "https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/web_popup%2Fmobile_popup1.png?alt=media&token=6a42b60d-5bc3-4bd7-ac23-92b7a6be91dd",
     alt: "CES PopUp Image 1",
     link: "/ces",
   },
   {
     id: 2,
     desktop:
-      "https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/web_popup%2Fdesktop_popup_02.png?alt=media&token=b88b7c3c-4073-4253-b76d-e92283eb982b",
+      "https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/web_popup%2Fdesktop_popup2.png?alt=media&token=833068b4-d9d5-420f-8854-fa984995b1c7",
     mobile:
-      "https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/web_popup%2Fmobile_pop_up_02.png?alt=media&token=9689932e-6cb0-4af3-851d-7a8f2c44d142",
+      "https://firebasestorage.googleapis.com/v0/b/vespexx-signal-dev-4c404.appspot.com/o/web_popup%2Fmobile_popup2.png?alt=media&token=5877038d-dbe3-4158-a167-542486af5a2c",
     alt: "CES PopUp Image 2",
     link: "/ces",
   },
